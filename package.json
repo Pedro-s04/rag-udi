@@ -1,0 +1,24 @@
+{
+  "name": "rag-udi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro-s04/rag-udi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pedro-s04/rag-udi/issues"
+  },
+  "homepage": "https://github.com/Pedro-s04/rag-udi#readme",
+  "dependencies": {
+    "pg": "^8.23.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Probably Stolen - Cyberpunk Shopkeeper Sim": {
+    "appid": 4348910,
+    "precio": 8.09,
+    "precioOriginal": 8.99,
+    "descuento": 10
+  },
+  "Moon Sweepers": {
+    "appid": 5335510,
+    "precio": 4.92,
+    "precioOriginal": 5.79,
+    "descuento": 15
+  },
+  "Dead by Daylight": {
+    "appid": 381210,
+    "precio": 5.99,
+    "precioOriginal": 14.99,
+    "descuento": 60
+  },
+  "The Wolf Among Us Remastered": {
+    "appid": 3884860,
+    "precio": 9.99,
+    "precioOriginal": 12.49,
+    "descuento": 20
+  },
+  "Planet Coaster 2": {
+    "appid": 2688950,
+    "precio": 8.04,
+    "precioOriginal": 22.99,
+    "descuento": 65
+  }
+}
