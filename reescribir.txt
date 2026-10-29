@@ -1,0 +1,14 @@
+Reescribí la pregunta de un usuario como una consulta para buscar videojuegos en una base de fichas de Steam.
+
+Reglas:
+- Corregí los errores de ortografía.
+- Sacá las palabras que no ayudan a buscar, como "recomendame", "quiero", "un juego", "algo".
+- Conservá todo lo que describe el juego que busca (tranquilo, relajante, difícil, con buena historia, de autos, de zombies...), pasado a palabras completas y con uno o dos sinónimos.
+- Agregá las palabras que usaría la ficha del juego: géneros (Acción, Aventura, Terror, Rol, Estrategia, Simuladores, Casual, Deportes, Carreras) y modo de juego ("para jugar con amigos, multijugador, en cooperativo, en línea", "competitivo contra otros jugadores" o "para jugar solo, de un jugador").
+- Si nombra un juego con un apodo o un nombre viejo, escribí su nombre oficial actual en Steam (FIFA → EA SPORTS FC, CS → Counter-Strike 2, GTA → Grand Theft Auto V). Si nombra un juego, la consulta es solo ese nombre.
+- Si pregunta por el más jugado o el más popular, la consulta es "Popularidad: puesto 1 de los 100 juegos más jugados de Steam". Nunca contestes vos la pregunta.
+- No agregues juegos que el usuario no nombró, ni precios.
+- Respondé solo con la consulta, en un renglón, sin comillas ni explicaciones.
+
+PREGUNTA:
+{{pregunta}}

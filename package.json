@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "chat": "node --env-file=.env chat.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

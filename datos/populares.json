@@ -1,0 +1,476 @@
+{
+  "Counter-Strike 2": {
+    "appid": 730,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Dota 2": {
+    "appid": 570,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "PUBG: BATTLEGROUNDS": {
+    "appid": 578080,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Wallpaper Engine": {
+    "appid": 431960,
+    "precio": 3.29,
+    "precioOriginal": 3.29,
+    "descuento": 0
+  },
+  "Cyberpunk 2077": {
+    "appid": 1091500,
+    "precio": 44.99,
+    "precioOriginal": 44.99,
+    "descuento": 0
+  },
+  "Apex Legends™": {
+    "appid": 1172470,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "AION 2": {
+    "appid": 3393110,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Slay the Spire 2": {
+    "appid": 2868840,
+    "precio": 11.99,
+    "precioOriginal": 11.99,
+    "descuento": 0
+  },
+  "WARDOGS": {
+    "appid": 1867240,
+    "precio": 24.99,
+    "precioOriginal": 24.99,
+    "descuento": 0
+  },
+  "War Thunder": {
+    "appid": 236390,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Geometry Dash": {
+    "appid": 322170,
+    "precio": 2.99,
+    "precioOriginal": 2.99,
+    "descuento": 0
+  },
+  "Tom Clancy's Rainbow Six Siege": {
+    "appid": 359550,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Overwatch®": {
+    "appid": 2357570,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "HELLDIVERS™ 2": {
+    "appid": 553850,
+    "precio": 39.99,
+    "precioOriginal": 39.99,
+    "descuento": 0
+  },
+  "The Binding of Isaac: Rebirth": {
+    "appid": 250900,
+    "precio": 14.99,
+    "precioOriginal": 14.99,
+    "descuento": 0
+  },
+  "Warframe": {
+    "appid": 230410,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Limbus Company": {
+    "appid": 1973530,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Stardew Valley": {
+    "appid": 413150,
+    "precio": 4.99,
+    "precioOriginal": 4.99,
+    "descuento": 0
+  },
+  "ARC Raiders": {
+    "appid": 1808500,
+    "precio": 39.99,
+    "precioOriginal": 39.99,
+    "descuento": 0
+  },
+  "Team Fortress 2": {
+    "appid": 440,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Valheim": {
+    "appid": 892970,
+    "precio": 14.99,
+    "precioOriginal": 14.99,
+    "descuento": 0
+  },
+  "Marvel Rivals": {
+    "appid": 2767030,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Battlefield™ 6": {
+    "appid": 2807960,
+    "precio": 69.99,
+    "precioOriginal": 69.99,
+    "descuento": 0
+  },
+  "Terraria": {
+    "appid": 105600,
+    "precio": 5.79,
+    "precioOriginal": 5.79,
+    "descuento": 0
+  },
+  "Delta Force": {
+    "appid": 2507950,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Euro Truck Simulator 2": {
+    "appid": 227300,
+    "precio": 10.59,
+    "precioOriginal": 10.59,
+    "descuento": 0
+  },
+  "Left 4 Dead 2": {
+    "appid": 550,
+    "precio": 5.69,
+    "precioOriginal": 5.69,
+    "descuento": 0
+  },
+  "Enshrouded": {
+    "appid": 1203620,
+    "precio": 19.99,
+    "precioOriginal": 19.99,
+    "descuento": 0
+  },
+  "BeamNG.drive": {
+    "appid": 284160,
+    "precio": 9.99,
+    "precioOriginal": 9.99,
+    "descuento": 0
+  },
+  "The Witcher 3: Wild Hunt — Remastered": {
+    "appid": 292030,
+    "precio": 34.99,
+    "precioOriginal": 34.99,
+    "descuento": 0
+  },
+  "Project Zomboid": {
+    "appid": 108600,
+    "precio": 12.49,
+    "precioOriginal": 12.49,
+    "descuento": 0
+  },
+  "VRChat": {
+    "appid": 438100,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "EA SPORTS FC™ 27": {
+    "appid": 4080220,
+    "precio": 69.99,
+    "precioOriginal": 69.99,
+    "descuento": 0
+  },
+  "Moon Sweepers": {
+    "appid": 5335510,
+    "precio": 4.92,
+    "precioOriginal": 5.79,
+    "descuento": 15
+  },
+  "Aniimo": {
+    "appid": 4126040,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "NARAKA: BLADEPOINT": {
+    "appid": 1203220,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Hearts of Iron IV": {
+    "appid": 394360,
+    "precio": 34.99,
+    "precioOriginal": 34.99,
+    "descuento": 0
+  },
+  "Red Dead Redemption 2": {
+    "appid": 1174180,
+    "precio": 59.99,
+    "precioOriginal": 59.99,
+    "descuento": 0
+  },
+  "EA SPORTS FC™ 26": {
+    "appid": 3405690,
+    "precio": 69.99,
+    "precioOriginal": 69.99,
+    "descuento": 0
+  },
+  "Baldur's Gate 3": {
+    "appid": 1086940,
+    "precio": 34.99,
+    "precioOriginal": 34.99,
+    "descuento": 0
+  },
+  "Total War: WARHAMMER III": {
+    "appid": 1142710,
+    "precio": 47.99,
+    "precioOriginal": 47.99,
+    "descuento": 0
+  },
+  "Garry's Mod": {
+    "appid": 4000,
+    "precio": 5.79,
+    "precioOriginal": 5.79,
+    "descuento": 0
+  },
+  "Bongo Cat": {
+    "appid": 3419430,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "eFootball™": {
+    "appid": 1665460,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Street Fighter™ 6": {
+    "appid": 1364780,
+    "precio": 29.99,
+    "precioOriginal": 29.99,
+    "descuento": 0
+  },
+  "Yu-Gi-Oh! Master Duel": {
+    "appid": 1449850,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "The Elder Scrolls V: Skyrim Special Edition": {
+    "appid": 489830,
+    "precio": 23.99,
+    "precioOriginal": 23.99,
+    "descuento": 0
+  },
+  "Palworld": {
+    "appid": 1623730,
+    "precio": 14.99,
+    "precioOriginal": 14.99,
+    "descuento": 0
+  },
+  "Probably Stolen - Cyberpunk Shopkeeper Sim": {
+    "appid": 4348910,
+    "precio": 8.09,
+    "precioOriginal": 8.99,
+    "descuento": 10
+  },
+  "TBH: Task Bar Hero": {
+    "appid": 3678970,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "OBS Studio": {
+    "appid": 1905180,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Farming Simulator 25": {
+    "appid": 2300320,
+    "precio": 19.49,
+    "precioOriginal": 19.49,
+    "descuento": 0
+  },
+  "ELDEN RING": {
+    "appid": 1245620,
+    "precio": 47.99,
+    "precioOriginal": 47.99,
+    "descuento": 0
+  },
+  "PEAK": {
+    "appid": 3527290,
+    "precio": 3.99,
+    "precioOriginal": 3.99,
+    "descuento": 0
+  },
+  "Forza Horizon 6": {
+    "appid": 2483190,
+    "precio": 48.99,
+    "precioOriginal": 48.99,
+    "descuento": 0
+  },
+  "THE FINALS": {
+    "appid": 2073850,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "The Sims™ 4": {
+    "appid": 1222670,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "RimWorld": {
+    "appid": 294100,
+    "precio": 17.99,
+    "precioOriginal": 17.99,
+    "descuento": 0
+  },
+  "Sid Meier’s Civilization® VI": {
+    "appid": 289070,
+    "precio": 59.99,
+    "precioOriginal": 59.99,
+    "descuento": 0
+  },
+  "Wuthering Waves": {
+    "appid": 3513350,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Crosshair X": {
+    "appid": 1366800,
+    "precio": 6.29,
+    "precioOriginal": 6.29,
+    "descuento": 0
+  },
+  "Arena Breakout: Infinite": {
+    "appid": 2073620,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Destiny 2": {
+    "appid": 1085660,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Brawlhalla": {
+    "appid": 291550,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Aimlabs": {
+    "appid": 714010,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Once Human": {
+    "appid": 2139460,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Dressmaker": {
+    "appid": 4019220,
+    "precio": 8.55,
+    "precioOriginal": 8.55,
+    "descuento": 0
+  },
+  "Assetto Corsa": {
+    "appid": 244210,
+    "precio": 10.49,
+    "precioOriginal": 10.49,
+    "descuento": 0
+  },
+  "Mount & Blade II: Bannerlord": {
+    "appid": 261550,
+    "precio": 24.99,
+    "precioOriginal": 24.99,
+    "descuento": 0
+  },
+  "FINAL FANTASY RESONANCE": {
+    "appid": 3259780,
+    "precio": 39.99,
+    "precioOriginal": 39.99,
+    "descuento": 0
+  },
+  "Age of Empires II: Definitive Edition": {
+    "appid": 813780,
+    "precio": 19.99,
+    "precioOriginal": 19.99,
+    "descuento": 0
+  },
+  "Warhammer 40,000: Space Marine 2": {
+    "appid": 2183900,
+    "precio": 34.99,
+    "precioOriginal": 34.99,
+    "descuento": 0
+  },
+  "Risk of Rain 2": {
+    "appid": 632360,
+    "precio": 12.49,
+    "precioOriginal": 12.49,
+    "descuento": 0
+  },
+  "Zenless Zone Zero": {
+    "appid": 4162040,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Bloons TD 6": {
+    "appid": 960090,
+    "precio": 7.79,
+    "precioOriginal": 7.79,
+    "descuento": 0
+  },
+  "Umamusume: Pretty Derby": {
+    "appid": 3224770,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0
+  },
+  "Crusader Kings III": {
+    "appid": 1158310,
+    "precio": 34.99,
+    "precioOriginal": 34.99,
+    "descuento": 0
+  },
+  "Escape from Tarkov": {
+    "appid": 3932890,
+    "precio": 19.99,
+    "precioOriginal": 19.99,
+    "descuento": 0
+  },
+  "How to Fish": {
+    "appid": 4001890,
+    "precio": 3.99,
+    "precioOriginal": 3.99,
+    "descuento": 0
+  }
+}

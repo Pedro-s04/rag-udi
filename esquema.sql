@@ -11,7 +11,7 @@ CREATE TABLE fragmentos (
   seccion   TEXT,                    -- qué parte del archivo (puede quedar vacía)
   posicion  INTEGER NOT NULL,        -- qué número de fragmento es dentro del archivo
   texto     TEXT NOT NULL,           -- el fragmento en sí
-  embedding VECTOR(____) NOT NULL,   -- TODO: ¿cuántos números devuelve tu modelo?
+  embedding VECTOR(1024) NOT NULL,   -- bge-m3 devuelve 1024 números
 
   -- Extensión Steam (no está en la guía): los números de la oferta, como columnas,
   -- para poder filtrar con SQL. Salen de datos/juegos.json, que arma bajar-steam.mjs.

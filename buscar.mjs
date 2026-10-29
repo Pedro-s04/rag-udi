@@ -9,12 +9,12 @@ export async function buscar(vectorPregunta, k = 3, filtros = {}) {
   const { descuentoMin = 0, precioMax = 1e9 } = filtros;
   const { rows } = await db.query(
     `SELECT id, fuente, seccion, posicion, texto, appid, precio::float AS precio, descuento,
-            -- TODO 1: la similitud, calculada a partir de la distancia
-            AS similitud
+            1 - (embedding <=> $1) AS similitud
        FROM fragmentos
       WHERE COALESCE(descuento, 0) >= $3
         AND COALESCE(precio, 0) <= $4
-      -- TODO 2: ordenar del más cercano al más lejano y quedarse con k ($2)
+      ORDER BY embedding <=> $1
+      LIMIT $2
     `,
     [comoVector(vectorPregunta), k, descuentoMin, precioMax],
   );

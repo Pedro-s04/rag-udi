@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAG de ofertas de Steam</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<style>
+  :root {
+    --fondo: #f6f7f9;
+    --tarjeta: #ffffff;
+    --texto: #111418;
+    --suave: #5b6470;
+    --borde: #d5dae1;
+    --usuario: #1d4ed8;
+    --verde: #15803d;
+    --verde-claro: #dcfce7;
+    --rojo: #b91c1c;
+    --rojo-claro: #fee2e2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 20px/1.5 system-ui, "Segoe UI", sans-serif;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  header { padding: 20px 0 12px; border-bottom: 2px solid var(--borde); }
+  h1 { margin: 0; font-size: 28px; }
+  header p { margin: 2px 0 12px; color: var(--suave); font-size: 17px; }
+  .filtros { display: flex; flex-wrap: wrap; gap: 16px; font-size: 17px; }
+  .filtros label { display: flex; align-items: center; gap: 8px; }
+  .filtros input {
+    width: 90px; font: inherit; padding: 4px 8px;
+    border: 2px solid var(--borde); border-radius: 8px; background: var(--tarjeta);
+  }
+
+  #chat { flex: 1; padding: 20px 0; display: flex; flex-direction: column; gap: 18px; }
+  .vacio { color: var(--suave); text-align: center; margin-top: 15vh; }
+  .vacio b { color: var(--texto); }
+  .usuario {
+    align-self: flex-end; max-width: 80%;
+    background: var(--usuario); color: #fff;
+    padding: 12px 18px; border-radius: 18px 18px 4px 18px;
+  }
+  .rag {
+    align-self: stretch;
+    background: var(--tarjeta); border: 2px solid var(--borde);
+    padding: 14px 18px; border-radius: 18px 18px 18px 4px;
+  }
+
+  .paso { border: 2px dashed var(--borde); border-radius: 12px; padding: 10px 14px; margin: 10px 0; }
+  .paso.visible { border-style: solid; border-color: var(--verde); }
+  .paso h3 { margin: 0; font-size: 20px; display: flex; align-items: center; gap: 10px; }
+  .paso:not(.visible) h3 { color: var(--suave); }
+  .num {
+    flex: none; width: 30px; height: 30px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--suave); color: #fff; font-size: 16px;
+  }
+  .paso.visible .num { background: var(--verde); }
+  .tiempo { margin-left: auto; font-size: 15px; font-weight: normal; color: var(--suave); }
+  .detalle { display: none; margin-top: 8px; }
+  .paso.visible .detalle { display: block; }
+
+  .vector { font: 16px/1.4 Consolas, ui-monospace, monospace; word-break: break-all; }
+  .cambio { display: grid; grid-template-columns: 130px 1fr; gap: 12px; align-items: baseline; margin-bottom: 4px; }
+  .tachada { text-decoration: line-through; color: var(--suave); }
+  .nota { color: var(--suave); font-size: 16px; }
+  .fragmento { margin: 10px 0; }
+  .fragmento .fila { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .fragmento .oferta { color: var(--suave); }
+  .archivo {
+    font-size: 13px; color: var(--suave); border: 1px solid var(--borde);
+    border-radius: 6px; padding: 0 6px; margin-left: 6px; vertical-align: middle;
+  }
+  .barra { height: 14px; border-radius: 7px; background: #e8ebef; margin-top: 4px; overflow: hidden; }
+  .barra i { display: block; height: 100%; background: var(--verde); }
+  .fragmento.descartado .nombre { text-decoration: line-through; color: var(--suave); }
+  .fragmento.descartado .barra i { background: var(--rojo); }
+  details summary { cursor: pointer; color: var(--usuario); }
+  pre {
+    white-space: pre-wrap; font: 15px/1.45 Consolas, ui-monospace, monospace;
+    background: var(--fondo); border: 1px solid var(--borde); border-radius: 8px;
+    padding: 10px 12px; max-height: 50vh; overflow: auto;
+  }
+
+  .respuesta { font-size: 22px; }
+  .respuesta p { margin: 0 0 10px; }
+  .fuente { color: var(--suave); font-size: 17px; }
+  .error { background: var(--rojo-claro); color: var(--rojo); border-radius: 10px; padding: 10px 14px; }
+
+  .acciones { display: flex; justify-content: flex-end; align-items: center; gap: 14px; margin-top: 6px; }
+  .acciones .nota { margin-right: auto; }
+  button {
+    font: inherit; font-weight: 600; cursor: pointer;
+    border: none; border-radius: 10px; padding: 10px 18px;
+    background: var(--verde); color: #fff;
+  }
+  button:disabled { background: var(--borde); color: var(--suave); cursor: default; }
+  .pensamiento { margin-bottom: 12px; }
+  .pensamiento > summary { margin-bottom: 4px; }
+
+  form {
+    position: sticky; bottom: 0;
+    display: flex; gap: 10px;
+    padding: 14px 0 20px; background: var(--fondo);
+    border-top: 2px solid var(--borde);
+  }
+  form input {
+    flex: 1; min-width: 0; font: inherit; padding: 10px 14px;
+    border: 2px solid var(--borde); border-radius: 12px; background: var(--tarjeta);
+  }
+  form input:focus, .filtros input:focus { outline: 3px solid #93c5fd; border-color: var(--usuario); }
+  kbd {
+    font: 14px Consolas, monospace; border: 1px solid var(--borde);
+    border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; background: var(--tarjeta);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>RAG de ofertas de Steam</h1>
+    <p>Ollama (bge-m3) arma los vectores · Postgres + pgvector busca · Gemini responde</p>
+    <div class="filtros">
+      <label>Precio máximo USD <input id="precioMax" type="number" min="0" step="0.5" placeholder="—"></label>
+      <label>Descuento mínimo % <input id="descuentoMin" type="number" min="0" max="100" step="5" placeholder="—"></label>
+    </div>
+  </header>
+
+  <section id="chat">
+    <p class="vacio">Hacé una pregunta y avanzá cada etapa con <b>Siguiente paso ▶</b>,
+      la <kbd>barra espaciadora</kbd> o <kbd>→</kbd>.</p>
+  </section>
+
+  <form id="formulario" autocomplete="off">
+    <input id="pregunta" placeholder="Ej.: ¿qué juego de terror multijugador me recomendás?" autofocus>
+    <button id="enviar">Preguntar</button>
+  </form>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const chat = $("chat");
+const formulario = $("formulario");
+
+// La pregunta en curso: cuál es su próximo paso y qué hacer al avanzar.
+let actual = null;
+
+const escapar = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const ms = n => n < 1000 ? `${Math.round(n)} ms` : `${(n / 1000).toFixed(1)} s`;
+
+async function api(ruta, cuerpo) {
+  let res;
+  try {
+    res = await fetch(ruta, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cuerpo),
+    });
+  } catch {
+    throw new Error("El servidor del chat no contesta. ¿Sigue corriendo node chat.mjs?");
+  }
+  const datos = await res.json();
+  if (!res.ok) throw new Error(datos.error);
+  return datos;
+}
+
+// La respuesta de Gemini: párrafos, **negritas** y el renglón "Fuente:" aparte.
+function formatearRespuesta(texto) {
+  return texto.trim().split(/\n+/).map(linea => {
+    const html = escapar(linea)
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*(.+?)\*/g, "<em>$1</em>");
+    // la etiqueta llega como "--ofertas-steam.md · ## Juego--": se le sacan los guiones y los #
+    if (/^fuente:/i.test(linea.trim())) return `<p class="fuente">${html.replace(/-{2,}|#+\s*/g, "")}</p>`;
+    return `<p>${html}</p>`;
+  }).join("");
+}
+
+// El precio como lo leería una persona: en oferta, sin oferta o gratis.
+function precioTexto(r) {
+  if (r.precio == null) return "";
+  if (r.precio === 0) return "gratis";
+  if (!r.descuento) return `USD ${r.precio.toFixed(2)} · sin oferta`;
+  return `USD ${r.precio.toFixed(2)} · −${r.descuento}%`;
+}
+
+function filtrosTexto(f) {
+  const partes = [];
+  if (f.precioMax != null) partes.push(`precio ≤ USD ${f.precioMax}`);
+  if (f.descuentoMin != null) partes.push(`descuento ≥ ${f.descuentoMin}%`);
+  return partes.length ? `Filtros SQL: ${partes.join(" y ")}` : "Sin filtros: busca entre todos los juegos";
+}
+
+function armarBurbuja() {
+  const div = document.createElement("div");
+  div.className = "rag";
+  div.innerHTML = `
+    <div class="pasos">
+      <div class="paso"><h3><span class="num">1</span>Reescribir la pregunta<span class="tiempo"></span></h3><div class="detalle"></div></div>
+      <div class="paso"><h3><span class="num">2</span>Consulta → vector<span class="tiempo"></span></h3><div class="detalle"></div></div>
+      <div class="paso"><h3><span class="num">3</span>Búsqueda en Postgres<span class="tiempo"></span></h3><div class="detalle"></div></div>
+      <div class="paso"><h3><span class="num">4</span>Prompt a Gemini<span class="tiempo"></span></h3><div class="detalle"></div></div>
+      <div class="paso"><h3><span class="num">5</span>Respuesta<span class="tiempo"></span></h3><div class="detalle"></div></div>
+    </div>
+    <div class="final"></div>
+    <div class="acciones"><span class="nota">Reescribiendo y buscando…</span><button disabled>Siguiente paso ▶</button></div>`;
+  return div;
+}
+
+function llenarPasos(burbuja, pregunta, d) {
+  const [p0, p1, p2, p3] = burbuja.querySelectorAll(".paso");
+
+  const r = d.reescritura;
+  p0.querySelector(".tiempo").textContent = ms(r.ms);
+  p0.querySelector(".detalle").innerHTML = `
+    <div class="cambio"><span class="nota">Tu pregunta</span><span class="tachada">${escapar(pregunta)}</span></div>
+    <div class="cambio"><span class="nota">Se busca con</span><b>${escapar(r.consulta)}</b></div>
+    <div class="nota">${r.error
+      ? `Gemini no pudo reescribirla (${escapar(r.error)}): se busca con la pregunta tal cual.`
+      : "Gemini corrige errores, saca el relleno y usa las palabras de las fichas de Steam. A la respuesta le llega tu pregunta original."}</div>`;
+
+  p1.querySelector(".tiempo").textContent = ms(d.msEmbedding);
+  p1.querySelector(".detalle").innerHTML = `
+    <div class="vector">[${d.vector.map(n => n.toFixed(4)).join(", ")}, …]</div>
+    <div class="nota">${d.dimensiones} números: así ve Ollama la consulta</div>`;
+
+  p2.querySelector(".tiempo").textContent = ms(d.msBusqueda);
+  const filas = d.resultados.map(r => `
+    <div class="fragmento ${r.util ? "" : "descartado"}">
+      <div class="fila">
+        <span class="nombre">${r.util ? "" : "✗ "}${escapar(r.seccion)}
+          <span class="archivo">${escapar(r.fuente.replace(/\.(md|txt)$/, ""))}</span></span>
+        <span class="oferta">${precioTexto(r)} · <b>${r.similitud.toFixed(3)}</b></span>
+      </div>
+      <div class="barra"><i style="width:${Math.max(0, r.similitud) * 100}%"></i></div>
+    </div>`).join("");
+  p2.querySelector(".detalle").innerHTML = `
+    ${filas || `<p class="nota">Ningún juego cumple los filtros.</p>`}
+    <div class="nota">${filtrosTexto(d.filtros)}${d.umbral ? ` · umbral ${d.umbral}` : ""}</div>`;
+
+  p3.querySelector(".detalle").innerHTML = d.prompt
+    ? `<div class="nota">Plantilla de prompt.txt + ${d.resultados.filter(r => r.util).length} fragmento(s) + tu pregunta</div>
+       <details><summary>Ver el prompt completo (${d.prompt.length} caracteres)</summary><pre>${escapar(d.prompt)}</pre></details>`
+    : `<p class="nota">${d.resultados.length ? "Ningún fragmento llegó al umbral" : "No quedó ningún fragmento"}:
+       no se arma el prompt y no se llama al modelo.</p>`;
+}
+
+async function preguntar(pregunta) {
+  chat.querySelector(".vacio")?.remove();
+  const yo = document.createElement("div");
+  yo.className = "usuario";
+  yo.textContent = pregunta;
+  const burbuja = armarBurbuja();
+  chat.append(yo, burbuja);
+  burbuja.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  const pasos = burbuja.querySelectorAll(".paso");
+  const boton = burbuja.querySelector("button");
+  const nota = burbuja.querySelector(".acciones .nota");
+  actual = { siguiente: 0, avanzar: null };
+
+  const fallar = e => {
+    burbuja.querySelector(".final").innerHTML = `<p class="error">${escapar(e.message)}</p>`;
+    burbuja.querySelector(".acciones").remove();
+    terminar();
+  };
+
+  let datos;
+  try {
+    datos = await api("/api/buscar", {
+      pregunta,
+      precioMax: $("precioMax").value,
+      descuentoMin: $("descuentoMin").value,
+    });
+  } catch (e) {
+    return fallar(e);
+  }
+  llenarPasos(burbuja, pregunta, datos);
+
+  // Gemini arranca ya, mientras se explican los pasos anteriores a la respuesta.
+  const inicio = performance.now();
+  const respuesta = datos.prompt ? api("/api/responder", { prompt: datos.prompt }) : null;
+  respuesta?.catch(() => {});   // el error se muestra recién en el paso 4
+
+  nota.textContent = "";
+  boton.disabled = false;
+  boton.focus();
+
+  actual.avanzar = async () => {
+    const i = actual.siguiente;
+    const ultimo = pasos.length - 1;   // el último paso es la respuesta
+    if (i < ultimo) {
+      pasos[i].classList.add("visible");
+      pasos[i].scrollIntoView({ behavior: "smooth", block: "nearest" });
+      actual.siguiente++;
+      if (actual.siguiente === ultimo) boton.textContent = "Ver respuesta ▶";
+      return;
+    }
+    boton.disabled = true;
+    actual.avanzar = null;
+    const p4 = pasos[ultimo];
+    p4.classList.add("visible");
+    let final;
+    if (!respuesta) {
+      final = `<div class="respuesta"><p>No lo encuentro en los documentos.</p></div>`;
+    } else {
+      p4.querySelector(".detalle").innerHTML = `<p class="nota">Gemini está escribiendo…</p>`;
+      try {
+        const r = await respuesta;
+        p4.querySelector(".tiempo").textContent = ms(performance.now() - inicio);
+        final = `<div class="respuesta">${formatearRespuesta(r.respuesta)}</div>`;
+      } catch (e) {
+        final = `<p class="error">${escapar(e.message)}</p>`;
+      }
+    }
+    // Los pasos se pliegan y queda la respuesta a la vista.
+    const pliegue = document.createElement("details");
+    pliegue.className = "pensamiento";
+    pliegue.innerHTML = `<summary>Ver cómo pensó</summary>`;
+    p4.querySelector(".detalle").innerHTML = "";
+    pliegue.append(burbuja.querySelector(".pasos"));
+    burbuja.prepend(pliegue);
+    burbuja.querySelector(".final").innerHTML = final;
+    burbuja.querySelector(".acciones").remove();
+    burbuja.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    terminar();
+  };
+  boton.onclick = () => actual?.avanzar?.();
+}
+
+function terminar() {
+  actual = null;
+  formulario.querySelectorAll("input, button").forEach(el => el.disabled = false);
+  $("pregunta").focus();
+}
+
+formulario.addEventListener("submit", e => {
+  e.preventDefault();
+  const pregunta = $("pregunta").value.trim();
+  if (!pregunta || actual) return;
+  $("pregunta").value = "";
+  formulario.querySelectorAll("input, button").forEach(el => el.disabled = true);
+  preguntar(pregunta);
+});
+
+// Barra espaciadora o flecha → avanzan, salvo que estés escribiendo en un campo.
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input")) return;
+  if (e.target.matches("button") && e.key === " ") return;   // el botón ya hace clic solo
+  if ((e.key === " " || e.key === "ArrowRight") && actual?.avanzar) {
+    e.preventDefault();
+    actual.avanzar();
+  }
+});
+</script>
+</body>
+</html>

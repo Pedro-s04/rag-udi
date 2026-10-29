@@ -1,15 +1,33 @@
 {
-  "Probably Stolen - Cyberpunk Shopkeeper Sim": {
-    "appid": 4348910,
-    "precio": 8.09,
-    "precioOriginal": 8.99,
-    "descuento": 10
+  "Volcano Princess": {
+    "appid": 1669980,
+    "precio": 3.24,
+    "precioOriginal": 4.99,
+    "descuento": 35
   },
-  "Moon Sweepers": {
-    "appid": 5335510,
-    "precio": 4.92,
-    "precioOriginal": 5.79,
-    "descuento": 15
+  "Rust": {
+    "appid": 252490,
+    "precio": 9.49,
+    "precioOriginal": 18.99,
+    "descuento": 50
+  },
+  "Firework": {
+    "appid": 1288310,
+    "precio": 4.99,
+    "precioOriginal": 9.99,
+    "descuento": 50
+  },
+  "The Forest": {
+    "appid": 242760,
+    "precio": 2.09,
+    "precioOriginal": 10.49,
+    "descuento": 80
+  },
+  "ARK: Survival Evolved": {
+    "appid": 346110,
+    "precio": 9.89,
+    "precioOriginal": 14.99,
+    "descuento": 34
   },
   "Dead by Daylight": {
     "appid": 381210,
@@ -17,16 +35,1768 @@
     "precioOriginal": 14.99,
     "descuento": 60
   },
-  "The Wolf Among Us Remastered": {
-    "appid": 3884860,
-    "precio": 9.99,
-    "precioOriginal": 12.49,
+  "Wandering Sword": {
+    "appid": 1876890,
+    "precio": 17.49,
+    "precioOriginal": 24.99,
+    "descuento": 30
+  },
+  "Phasmophobia": {
+    "appid": 739630,
+    "precio": 6.64,
+    "precioOriginal": 9.49,
+    "descuento": 30
+  },
+  "嗜血印 Bloody Spell": {
+    "appid": 992300,
+    "precio": 2.49,
+    "precioOriginal": 24.99,
+    "descuento": 90
+  },
+  "Senren＊Banka": {
+    "appid": 1144400,
+    "precio": 18.19,
+    "precioOriginal": 34.99,
+    "descuento": 48
+  },
+  "Unheard": {
+    "appid": 942970,
+    "precio": 1.59,
+    "precioOriginal": 3.99,
+    "descuento": 60
+  },
+  "Tiny Bunny": {
+    "appid": 1421250,
+    "precio": 4.4,
+    "precioOriginal": 6.29,
+    "descuento": 30
+  },
+  "觅长生": {
+    "appid": 1189490,
+    "precio": 12.74,
+    "precioOriginal": 14.99,
+    "descuento": 15
+  },
+  "R.E.P.O.": {
+    "appid": 3241660,
+    "precio": 3.24,
+    "precioOriginal": 4.99,
+    "descuento": 35
+  },
+  "港詭實錄ParanormalHK": {
+    "appid": 1178490,
+    "precio": 6.49,
+    "precioOriginal": 12.99,
+    "descuento": 50
+  },
+  "Resident Evil 4": {
+    "appid": 2050650,
+    "precio": 7.25,
+    "precioOriginal": 29,
+    "descuento": 75
+  },
+  "Tower Unite": {
+    "appid": 394690,
+    "precio": 5.76,
+    "precioOriginal": 10.49,
+    "descuento": 45
+  },
+  "Dying Light": {
+    "appid": 239140,
+    "precio": 1.8,
+    "precioOriginal": 18,
+    "descuento": 90
+  },
+  "山河旅探 - Murders on the Yangtze River": {
+    "appid": 1746030,
+    "precio": 4.79,
+    "precioOriginal": 7.99,
+    "descuento": 40
+  },
+  "Resident Evil 4 (2005)": {
+    "appid": 254700,
+    "precio": 3.75,
+    "precioOriginal": 15,
+    "descuento": 75
+  },
+  "White Knuckle": {
+    "appid": 3195790,
+    "precio": 7.64,
+    "precioOriginal": 9.55,
     "descuento": 20
   },
-  "Planet Coaster 2": {
-    "appid": 2688950,
-    "precio": 8.04,
-    "precioOriginal": 22.99,
+  "Witch It": {
+    "appid": 559650,
+    "precio": 1.57,
+    "precioOriginal": 10.49,
+    "descuento": 85
+  },
+  "Undertale": {
+    "appid": 391540,
+    "precio": 1.44,
+    "precioOriginal": 5.79,
+    "descuento": 75
+  },
+  "探灵笔记/拾遗记-1V5(Notes of Soul)": {
+    "appid": 991780,
+    "precio": 5.99,
+    "precioOriginal": 29.99,
+    "descuento": 80
+  },
+  "Resident Evil 2": {
+    "appid": 883710,
+    "precio": 5.8,
+    "precioOriginal": 29,
+    "descuento": 80
+  },
+  "Gothic 1 Classic": {
+    "appid": 65540,
+    "precio": 2.09,
+    "precioOriginal": 10.49,
+    "descuento": 80
+  },
+  "Sons Of The Forest": {
+    "appid": 1326470,
+    "precio": 4.19,
+    "precioOriginal": 14.99,
+    "descuento": 72
+  },
+  "Don't Starve Together": {
+    "appid": 322330,
+    "precio": 2.24,
+    "precioOriginal": 6.59,
+    "descuento": 66
+  },
+  "Nova Drift": {
+    "appid": 858210,
+    "precio": 4.49,
+    "precioOriginal": 8.99,
+    "descuento": 50
+  },
+  "Gothic II: Gold Edition": {
+    "appid": 39510,
+    "precio": 2.09,
+    "precioOriginal": 10.49,
+    "descuento": 80
+  },
+  "7 Days to Die": {
+    "appid": 251570,
+    "precio": 11.54,
+    "precioOriginal": 20.99,
+    "descuento": 45
+  },
+  "DayZ": {
+    "appid": 221100,
+    "precio": 24.99,
+    "precioOriginal": 49.99,
+    "descuento": 50
+  },
+  "Subnautica": {
+    "appid": 264710,
+    "precio": 5.24,
+    "precioOriginal": 20.99,
+    "descuento": 75
+  },
+  "Living With Sister: Monochrome Fantasy": {
+    "appid": 2429860,
+    "precio": 0.88,
+    "precioOriginal": 1.1,
+    "descuento": 20
+  },
+  "NEKOPARA Vol. 3": {
+    "appid": 602520,
+    "precio": 2.31,
+    "precioOriginal": 5.79,
+    "descuento": 60
+  },
+  "No Man's Sky": {
+    "appid": 275850,
+    "precio": 10.79,
+    "precioOriginal": 26.99,
+    "descuento": 60
+  },
+  "From the Depths": {
+    "appid": 268650,
+    "precio": 3.74,
+    "precioOriginal": 12.49,
+    "descuento": 70
+  },
+  "NEKOPARA Vol. 2": {
+    "appid": 420110,
+    "precio": 2.31,
+    "precioOriginal": 5.79,
+    "descuento": 60
+  },
+  "Slime Rancher": {
+    "appid": 433340,
+    "precio": 2.24,
+    "precioOriginal": 8.99,
+    "descuento": 75
+  },
+  "Raging Loop": {
+    "appid": 648100,
+    "precio": 11.99,
+    "precioOriginal": 29.99,
+    "descuento": 60
+  },
+  "Across the Obelisk": {
+    "appid": 1385380,
+    "precio": 5.99,
+    "precioOriginal": 11.99,
+    "descuento": 50
+  },
+  "Blasphemous": {
+    "appid": 774361,
+    "precio": 3.12,
+    "precioOriginal": 12.49,
+    "descuento": 75
+  },
+  "Winter Memories": {
+    "appid": 2495450,
+    "precio": 1.6,
+    "precioOriginal": 2,
+    "descuento": 20
+  },
+  "Bomber Crew": {
+    "appid": 537800,
+    "precio": 1.27,
+    "precioOriginal": 8.49,
+    "descuento": 85
+  },
+  "Detention": {
+    "appid": 555220,
+    "precio": 2.39,
+    "precioOriginal": 11.99,
+    "descuento": 80
+  },
+  "Yog-Sothoth’s Yard": {
+    "appid": 2194530,
+    "precio": 3.49,
+    "precioOriginal": 4.99,
+    "descuento": 30
+  },
+  "Grand Theft Auto V Enhanced": {
+    "appid": 3240220,
+    "precio": 14.99,
+    "precioOriginal": 29.99,
+    "descuento": 50
+  },
+  "The Roottrees are Dead": {
+    "appid": 2754380,
+    "precio": 5.34,
+    "precioOriginal": 6.29,
+    "descuento": 15
+  },
+  "Raft": {
+    "appid": 648800,
+    "precio": 7.36,
+    "precioOriginal": 10.99,
+    "descuento": 33
+  },
+  "CLANNAD": {
+    "appid": 324160,
+    "precio": 7.34,
+    "precioOriginal": 20.99,
     "descuento": 65
+  },
+  "Tomb Raider Game of the Year": {
+    "appid": 203160,
+    "precio": 0.99,
+    "precioOriginal": 9.99,
+    "descuento": 90
+  },
+  "Species: Unknown": {
+    "appid": 2747330,
+    "precio": 4.63,
+    "precioOriginal": 5.79,
+    "descuento": 20
+  },
+  "System Shock": {
+    "appid": 482400,
+    "precio": 8.99,
+    "precioOriginal": 29.99,
+    "descuento": 70
+  },
+  "Balatro": {
+    "appid": 2379780,
+    "precio": 6.39,
+    "precioOriginal": 7.99,
+    "descuento": 20
+  },
+  "DRAGON BALL FighterZ": {
+    "appid": 678950,
+    "precio": 11.51,
+    "precioOriginal": 71.99,
+    "descuento": 84
+  },
+  "The Song of Saya": {
+    "appid": 702050,
+    "precio": 7.49,
+    "precioOriginal": 14.99,
+    "descuento": 50
+  },
+  "Pathologic 2": {
+    "appid": 505230,
+    "precio": 3.59,
+    "precioOriginal": 17.99,
+    "descuento": 80
+  },
+  "TROUBLESHOOTER: Abandoned Children": {
+    "appid": 470310,
+    "precio": 3.12,
+    "precioOriginal": 12.49,
+    "descuento": 75
+  },
+  "Gothic 3 Classic": {
+    "appid": 39500,
+    "precio": 2.09,
+    "precioOriginal": 10.49,
+    "descuento": 80
+  },
+  "WORLD OF HORROR": {
+    "appid": 913740,
+    "precio": 7.86,
+    "precioOriginal": 10.49,
+    "descuento": 25
+  },
+  "Outlast": {
+    "appid": 238320,
+    "precio": 0.79,
+    "precioOriginal": 7.99,
+    "descuento": 90
+  },
+  "Back to the Dawn": {
+    "appid": 1735700,
+    "precio": 9.75,
+    "precioOriginal": 13,
+    "descuento": 25
+  },
+  "Rusty Lake: Roots": {
+    "appid": 532110,
+    "precio": 2.23,
+    "precioOriginal": 3.99,
+    "descuento": 44
+  },
+  "Incursion Red River": {
+    "appid": 2116120,
+    "precio": 8.8,
+    "precioOriginal": 11,
+    "descuento": 20
+  },
+  "Otaku's Adventure": {
+    "appid": 937170,
+    "precio": 2.79,
+    "precioOriginal": 3.99,
+    "descuento": 30
+  },
+  "NEKOPARA Vol. 4": {
+    "appid": 1406990,
+    "precio": 2.89,
+    "precioOriginal": 5.79,
+    "descuento": 50
+  },
+  "The Life and Suffering of Sir Brante": {
+    "appid": 1272160,
+    "precio": 3.14,
+    "precioOriginal": 10.49,
+    "descuento": 70
+  },
+  "Rogue : Genesia": {
+    "appid": 2067920,
+    "precio": 4.55,
+    "precioOriginal": 7.99,
+    "descuento": 43
+  },
+  "Forever Skies": {
+    "appid": 1641960,
+    "precio": 5.99,
+    "precioOriginal": 14.99,
+    "descuento": 60
+  },
+  "BioShock Infinite": {
+    "appid": 8870,
+    "precio": 7.49,
+    "precioOriginal": 29.99,
+    "descuento": 75
+  },
+  "Ghostrunner 2": {
+    "appid": 2144740,
+    "precio": 6.59,
+    "precioOriginal": 32.99,
+    "descuento": 80
+  },
+  "DRAGON BALL XENOVERSE 2": {
+    "appid": 454650,
+    "precio": 3.99,
+    "precioOriginal": 15.99,
+    "descuento": 75
+  },
+  "Chillquarium": {
+    "appid": 2276930,
+    "precio": 1.61,
+    "precioOriginal": 3.59,
+    "descuento": 55
+  },
+  "Manifold Garden": {
+    "appid": 473950,
+    "precio": 2.62,
+    "precioOriginal": 10.49,
+    "descuento": 75
+  },
+  "Airport CEO": {
+    "appid": 673610,
+    "precio": 1.87,
+    "precioOriginal": 12.49,
+    "descuento": 85
+  },
+  "GOD EATER 3": {
+    "appid": 899440,
+    "precio": 4.79,
+    "precioOriginal": 47.99,
+    "descuento": 90
+  },
+  "Settlement Survival": {
+    "appid": 1509510,
+    "precio": 2.92,
+    "precioOriginal": 11.69,
+    "descuento": 75
+  },
+  "ROUTINE": {
+    "appid": 606160,
+    "precio": 8.11,
+    "precioOriginal": 12.49,
+    "descuento": 35
+  },
+  "SUNLESS SEA": {
+    "appid": 304650,
+    "precio": 3.36,
+    "precioOriginal": 9.89,
+    "descuento": 66
+  },
+  "The Walking Dead: Saints & Sinners": {
+    "appid": 916840,
+    "precio": 5.24,
+    "precioOriginal": 10.49,
+    "descuento": 50
+  },
+  "Resident Evil Requiem": {
+    "appid": 3764200,
+    "precio": 37.1,
+    "precioOriginal": 53,
+    "descuento": 30
+  },
+  "Tainted Grail: Conquest": {
+    "appid": 1199030,
+    "precio": 5.99,
+    "precioOriginal": 19.99,
+    "descuento": 70
+  },
+  "Gloomwood": {
+    "appid": 1150760,
+    "precio": 6.74,
+    "precioOriginal": 8.99,
+    "descuento": 25
+  },
+  "The Dark Pictures Anthology: House of Ashes": {
+    "appid": 1281590,
+    "precio": 7.91,
+    "precioOriginal": 23.99,
+    "descuento": 67
+  },
+  "Rusty Lake Paradise": {
+    "appid": 744190,
+    "precio": 2.23,
+    "precioOriginal": 3.99,
+    "descuento": 44
+  },
+  "Resident Evil 3": {
+    "appid": 952060,
+    "precio": 5.8,
+    "precioOriginal": 29,
+    "descuento": 80
+  },
+  "The Dark Pictures Anthology: Little Hope": {
+    "appid": 1194630,
+    "precio": 7.99,
+    "precioOriginal": 15.99,
+    "descuento": 50
+  },
+  "Rebel Galaxy": {
+    "appid": 290300,
+    "precio": 2.39,
+    "precioOriginal": 11.99,
+    "descuento": 80
+  },
+  "Pax Dei": {
+    "appid": 1995520,
+    "precio": 14.99,
+    "precioOriginal": 29.99,
+    "descuento": 50
+  },
+  "Operation: Tango": {
+    "appid": 1335790,
+    "precio": 2.62,
+    "precioOriginal": 10.49,
+    "descuento": 75
+  },
+  "Rivals of Aether II": {
+    "appid": 2217000,
+    "precio": 7.49,
+    "precioOriginal": 14.99,
+    "descuento": 50
+  },
+  "Resident Evil Village": {
+    "appid": 1196590,
+    "precio": 7.25,
+    "precioOriginal": 29,
+    "descuento": 75
+  },
+  "ARK: Survival Ascended": {
+    "appid": 2399830,
+    "precio": 11.24,
+    "precioOriginal": 44.99,
+    "descuento": 75
+  },
+  "SD GUNDAM G GENERATION CROSS RAYS": {
+    "appid": 728530,
+    "precio": 15.99,
+    "precioOriginal": 31.99,
+    "descuento": 50
+  },
+  "Beholder 2": {
+    "appid": 761620,
+    "precio": 1.39,
+    "precioOriginal": 9.29,
+    "descuento": 85
+  },
+  "Parkitect": {
+    "appid": 453090,
+    "precio": 5.99,
+    "precioOriginal": 14.99,
+    "descuento": 60
+  },
+  "Date Everything!": {
+    "appid": 2201320,
+    "precio": 7.99,
+    "precioOriginal": 19.99,
+    "descuento": 60
+  },
+  "Resident Evil 7 Biohazard": {
+    "appid": 418370,
+    "precio": 6,
+    "precioOriginal": 15,
+    "descuento": 60
+  },
+  "Test Drive Unlimited Solar Crown": {
+    "appid": 1249970,
+    "precio": 4.99,
+    "precioOriginal": 24.99,
+    "descuento": 80
+  },
+  "The Infected": {
+    "appid": 1360000,
+    "precio": 7.19,
+    "precioOriginal": 15.99,
+    "descuento": 55
+  },
+  "Home Behind 2": {
+    "appid": 1220010,
+    "precio": 7.59,
+    "precioOriginal": 19.99,
+    "descuento": 62
+  },
+  "Ghost Trick: Detective fantasma": {
+    "appid": 1967430,
+    "precio": 7.59,
+    "precioOriginal": 23,
+    "descuento": 67
+  },
+  "POOLS": {
+    "appid": 2663530,
+    "precio": 3.47,
+    "precioOriginal": 5.79,
+    "descuento": 40
+  },
+  "Yokai's Secret": {
+    "appid": 1146630,
+    "precio": 0.79,
+    "precioOriginal": 1.99,
+    "descuento": 60
+  },
+  "Banishers: Ghosts of New Eden": {
+    "appid": 1493640,
+    "precio": 8.99,
+    "precioOriginal": 29.99,
+    "descuento": 70
+  },
+  "KLETKA": {
+    "appid": 1699480,
+    "precio": 3.47,
+    "precioOriginal": 5.79,
+    "descuento": 40
+  },
+  "Hunt: Showdown 1896": {
+    "appid": 594650,
+    "precio": 5.99,
+    "precioOriginal": 14.99,
+    "descuento": 60
+  },
+  "METRO 2033 Redux": {
+    "appid": 286690,
+    "precio": 1.49,
+    "precioOriginal": 14.99,
+    "descuento": 90
+  },
+  "John Carpenter's Toxic Commando": {
+    "appid": 2157830,
+    "precio": 11.99,
+    "precioOriginal": 23.99,
+    "descuento": 50
+  },
+  "Dispatch": {
+    "appid": 2592160,
+    "precio": 11.99,
+    "precioOriginal": 14.99,
+    "descuento": 20
+  },
+  "Resident Evil 5": {
+    "appid": 21690,
+    "precio": 3.75,
+    "precioOriginal": 15,
+    "descuento": 75
+  },
+  "Deep Rock Galactic": {
+    "appid": 548430,
+    "precio": 4.49,
+    "precioOriginal": 14.99,
+    "descuento": 70
+  },
+  "Torre de Babel: Sobrevivientes del Caos": {
+    "appid": 2665680,
+    "precio": 5.99,
+    "precioOriginal": 7.49,
+    "descuento": 20
+  },
+  "Town to City": {
+    "appid": 3115220,
+    "precio": 10.86,
+    "precioOriginal": 14.49,
+    "descuento": 25
+  },
+  "Blood West": {
+    "appid": 1587130,
+    "precio": 4.61,
+    "precioOriginal": 13.99,
+    "descuento": 67
+  },
+  "The House in Fata Morgana": {
+    "appid": 303310,
+    "precio": 8.11,
+    "precioOriginal": 12.49,
+    "descuento": 35
+  },
+  "Call of the Wild: The Angler™": {
+    "appid": 1408610,
+    "precio": 4.49,
+    "precioOriginal": 14.99,
+    "descuento": 70
+  },
+  "学生时代": {
+    "appid": 1991040,
+    "precio": 5.99,
+    "precioOriginal": 7.99,
+    "descuento": 25
+  },
+  "YOU and ME and HER: A Love Story": {
+    "appid": 1293820,
+    "precio": 17.99,
+    "precioOriginal": 29.99,
+    "descuento": 40
+  },
+  "EZ2ON REBOOT : R": {
+    "appid": 1477590,
+    "precio": 13.99,
+    "precioOriginal": 27.99,
+    "descuento": 50
+  },
+  "FlatOut": {
+    "appid": 6220,
+    "precio": 0.89,
+    "precioOriginal": 4.49,
+    "descuento": 80
+  },
+  "HARD BULLET": {
+    "appid": 1294760,
+    "precio": 7.34,
+    "precioOriginal": 10.49,
+    "descuento": 30
+  },
+  "Heroes of Hammerwatch II": {
+    "appid": 619820,
+    "precio": 6.99,
+    "precioOriginal": 13.99,
+    "descuento": 50
+  },
+  "The Test: Hypothesis Rising": {
+    "appid": 1282200,
+    "precio": 1.19,
+    "precioOriginal": 1.99,
+    "descuento": 40
+  },
+  "Monster Hunter Stories 3: Twisted Reflection": {
+    "appid": 2852190,
+    "precio": 37.1,
+    "precioOriginal": 53,
+    "descuento": 30
+  },
+  "ContractVille": {
+    "appid": 2698780,
+    "precio": 2.89,
+    "precioOriginal": 5.79,
+    "descuento": 50
+  },
+  "ANEURISM IV": {
+    "appid": 2773280,
+    "precio": 2.89,
+    "precioOriginal": 5.79,
+    "descuento": 50
+  },
+  "Super Robot Wars 30": {
+    "appid": 898750,
+    "precio": 11.99,
+    "precioOriginal": 47.99,
+    "descuento": 75
+  },
+  "The Casting of Frank Stone™": {
+    "appid": 2223840,
+    "precio": 4.61,
+    "precioOriginal": 13.99,
+    "descuento": 67
+  },
+  "DeadPoly": {
+    "appid": 1621070,
+    "precio": 2.89,
+    "precioOriginal": 4.99,
+    "descuento": 42
+  },
+  "Outlaws of the Old West": {
+    "appid": 840800,
+    "precio": 5.24,
+    "precioOriginal": 10.49,
+    "descuento": 50
+  },
+  "Crashlands": {
+    "appid": 391730,
+    "precio": 2.79,
+    "precioOriginal": 7.99,
+    "descuento": 65
+  },
+  "CODE VEIN II": {
+    "appid": 2362060,
+    "precio": 27.99,
+    "precioOriginal": 55.99,
+    "descuento": 50
+  },
+  "Sora no Kiseki the 1st": {
+    "appid": 3447040,
+    "precio": 22.49,
+    "precioOriginal": 44.99,
+    "descuento": 50
+  },
+  "Dead Cells": {
+    "appid": 588650,
+    "precio": 6.24,
+    "precioOriginal": 12.49,
+    "descuento": 50
+  },
+  "Homeworld 3": {
+    "appid": 1840080,
+    "precio": 29.99,
+    "precioOriginal": 29.99,
+    "descuento": 0
+  },
+  "FATAL FRAME / PROJECT ZERO: Maiden of Black Water": {
+    "appid": 1732190,
+    "precio": 23.3,
+    "precioOriginal": 33.29,
+    "descuento": 30
+  },
+  "Resident Evil 6": {
+    "appid": 221040,
+    "precio": 3.75,
+    "precioOriginal": 15,
+    "descuento": 75
+  },
+  "Buckshot Roulette": {
+    "appid": 2835570,
+    "precio": 0.74,
+    "precioOriginal": 1.49,
+    "descuento": 50
+  },
+  "BioShock™ Remastered": {
+    "appid": 409710,
+    "precio": 4.99,
+    "precioOriginal": 19.99,
+    "descuento": 75
+  },
+  "Escape the Backrooms": {
+    "appid": 1943950,
+    "precio": 3.99,
+    "precioOriginal": 4.99,
+    "descuento": 20
+  },
+  "Gordian Quest": {
+    "appid": 981430,
+    "precio": 5.99,
+    "precioOriginal": 19.99,
+    "descuento": 70
+  },
+  "The Test: Final Revelation": {
+    "appid": 1428310,
+    "precio": 1.19,
+    "precioOriginal": 1.99,
+    "descuento": 40
+  },
+  "Cyber Manhunt 2: New World  - The Hacking Simulator": {
+    "appid": 2421410,
+    "precio": 5.99,
+    "precioOriginal": 9.99,
+    "descuento": 40
+  },
+  "Rise of the Tomb Raider™": {
+    "appid": 391220,
+    "precio": 1.49,
+    "precioOriginal": 14.99,
+    "descuento": 90
+  },
+  "Tower Dominion": {
+    "appid": 3226530,
+    "precio": 5.1,
+    "precioOriginal": 9.29,
+    "descuento": 45
+  },
+  "Killer Frequency": {
+    "appid": 1903620,
+    "precio": 3.19,
+    "precioOriginal": 15.99,
+    "descuento": 80
+  },
+  "Clair Obscur: Expedition 33": {
+    "appid": 1903340,
+    "precio": 27.99,
+    "precioOriginal": 34.99,
+    "descuento": 20
+  },
+  "The Great Ace Attorney Chronicles": {
+    "appid": 1158850,
+    "precio": 11.6,
+    "precioOriginal": 29,
+    "descuento": 60
+  },
+  "Killing Floor 2": {
+    "appid": 232090,
+    "precio": 2.99,
+    "precioOriginal": 29.99,
+    "descuento": 90
+  },
+  "Ship of Fools": {
+    "appid": 1286580,
+    "precio": 2.75,
+    "precioOriginal": 11,
+    "descuento": 75
+  },
+  "POSTAL 2": {
+    "appid": 223470,
+    "precio": 0.57,
+    "precioOriginal": 5.79,
+    "descuento": 90
+  },
+  "FOREWARNED": {
+    "appid": 1562420,
+    "precio": 2.18,
+    "precioOriginal": 7.29,
+    "descuento": 70
+  },
+  "Home Behind": {
+    "appid": 467960,
+    "precio": 1.19,
+    "precioOriginal": 5.99,
+    "descuento": 80
+  },
+  "Angels of Death": {
+    "appid": 537110,
+    "precio": 4.99,
+    "precioOriginal": 9.99,
+    "descuento": 50
+  },
+  "SpaceBourne 2": {
+    "appid": 1646850,
+    "precio": 3.49,
+    "precioOriginal": 6.99,
+    "descuento": 50
+  },
+  "Behind the Frame: El paisaje más bello": {
+    "appid": 1634150,
+    "precio": 3.24,
+    "precioOriginal": 6.49,
+    "descuento": 50
+  },
+  "Star Trucker": {
+    "appid": 2380050,
+    "precio": 3.74,
+    "precioOriginal": 12.49,
+    "descuento": 70
+  },
+  "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4": {
+    "appid": 349040,
+    "precio": 11.99,
+    "precioOriginal": 15.99,
+    "descuento": 25
+  },
+  "Ib": {
+    "appid": 1901370,
+    "precio": 5.1,
+    "precioOriginal": 7.29,
+    "descuento": 30
+  },
+  "Katamari Damacy REROLL": {
+    "appid": 848350,
+    "precio": 5.99,
+    "precioOriginal": 23.99,
+    "descuento": 75
+  },
+  "Scarlet Hollow": {
+    "appid": 1609230,
+    "precio": 11.19,
+    "precioOriginal": 13.99,
+    "descuento": 20
+  },
+  "Sker Ritual": {
+    "appid": 1492070,
+    "precio": 3.73,
+    "precioOriginal": 10.99,
+    "descuento": 66
+  },
+  "Path of Kung Fu": {
+    "appid": 2361680,
+    "precio": 5.59,
+    "precioOriginal": 7.99,
+    "descuento": 30
+  },
+  "Necrosmith": {
+    "appid": 1949190,
+    "precio": 0.79,
+    "precioOriginal": 1.99,
+    "descuento": 60
+  },
+  "The Bureau: XCOM Declassified": {
+    "appid": 65930,
+    "precio": 3.99,
+    "precioOriginal": 19.99,
+    "descuento": 80
+  },
+  "Mr. Prepper": {
+    "appid": 761830,
+    "precio": 2.79,
+    "precioOriginal": 19.99,
+    "descuento": 86
+  },
+  "V Rising": {
+    "appid": 1604030,
+    "precio": 8.09,
+    "precioOriginal": 17.99,
+    "descuento": 55
+  },
+  "The Incident at Galley House": {
+    "appid": 3641000,
+    "precio": 5.66,
+    "precioOriginal": 6.29,
+    "descuento": 10
+  },
+  "Beholder: Conductor": {
+    "appid": 2825530,
+    "precio": 2.33,
+    "precioOriginal": 7.79,
+    "descuento": 70
+  },
+  "Bully: Scholarship Edition": {
+    "appid": 12200,
+    "precio": 5.24,
+    "precioOriginal": 14.99,
+    "descuento": 65
+  },
+  "Granny Simulator": {
+    "appid": 1053680,
+    "precio": 2.49,
+    "precioOriginal": 4.99,
+    "descuento": 50
+  },
+  "Project Warlock": {
+    "appid": 893680,
+    "precio": 1.56,
+    "precioOriginal": 12,
+    "descuento": 87
+  },
+  "GRIME": {
+    "appid": 1123050,
+    "precio": 4.79,
+    "precioOriginal": 11.99,
+    "descuento": 60
+  },
+  "Observation": {
+    "appid": 906100,
+    "precio": 3.12,
+    "precioOriginal": 12.49,
+    "descuento": 75
+  },
+  "Apocalypse Party": {
+    "appid": 2351560,
+    "precio": 2.89,
+    "precioOriginal": 5.79,
+    "descuento": 50
+  },
+  "DEVOUR": {
+    "appid": 1274570,
+    "precio": 2.89,
+    "precioOriginal": 5.79,
+    "descuento": 50
+  },
+  "Human Fall Flat": {
+    "appid": 477160,
+    "precio": 3.14,
+    "precioOriginal": 10.49,
+    "descuento": 70
+  },
+  "Mycopunk": {
+    "appid": 3247750,
+    "precio": 3.99,
+    "precioOriginal": 7.99,
+    "descuento": 50
+  },
+  "Summer of '58": {
+    "appid": 1609080,
+    "precio": 1.57,
+    "precioOriginal": 3.5,
+    "descuento": 55
+  },
+  "METRO Last Light Redux": {
+    "appid": 287390,
+    "precio": 1.49,
+    "precioOriginal": 14.99,
+    "descuento": 90
+  },
+  "Lil Gator Game": {
+    "appid": 1586800,
+    "precio": 5.24,
+    "precioOriginal": 10.49,
+    "descuento": 50
+  },
+  "The Hex": {
+    "appid": 510420,
+    "precio": 1.99,
+    "precioOriginal": 9.99,
+    "descuento": 80
+  },
+  "Othercide": {
+    "appid": 798490,
+    "precio": 1.89,
+    "precioOriginal": 18.99,
+    "descuento": 90
+  },
+  "Phantom Brigade": {
+    "appid": 553540,
+    "precio": 4.19,
+    "precioOriginal": 10.49,
+    "descuento": 60
+  },
+  "Silica": {
+    "appid": 1494420,
+    "precio": 7.99,
+    "precioOriginal": 9.99,
+    "descuento": 20
+  },
+  "Miss Neko 3": {
+    "appid": 2022180,
+    "precio": 1.49,
+    "precioOriginal": 2.99,
+    "descuento": 50
+  },
+  "South of Midnight": {
+    "appid": 1934570,
+    "precio": 11.54,
+    "precioOriginal": 16.49,
+    "descuento": 30
+  },
+  "Slay the Spire": {
+    "appid": 646570,
+    "precio": 2.87,
+    "precioOriginal": 11.49,
+    "descuento": 75
+  },
+  "Paper Dolls: Original / 纸人": {
+    "appid": 1051310,
+    "precio": 2.86,
+    "precioOriginal": 9.55,
+    "descuento": 70
+  },
+  "Resonance: A Plague Tale Legacy": {
+    "appid": 2713000,
+    "precio": 23.99,
+    "precioOriginal": 29.99,
+    "descuento": 20
+  },
+  "Dead Age": {
+    "appid": 363930,
+    "precio": 0.63,
+    "precioOriginal": 7.99,
+    "descuento": 92
+  },
+  "Stories Untold": {
+    "appid": 558420,
+    "precio": 0.57,
+    "precioOriginal": 5.79,
+    "descuento": 90
+  },
+  "Mind Over Magic": {
+    "appid": 1270580,
+    "precio": 3.29,
+    "precioOriginal": 5.49,
+    "descuento": 40
+  },
+  "Dying Light 2 Stay Human: Reloaded Edition": {
+    "appid": 534380,
+    "precio": 7.99,
+    "precioOriginal": 39.99,
+    "descuento": 80
+  },
+  "Bang-On Balls: Chronicles": {
+    "appid": 1227650,
+    "precio": 5.94,
+    "precioOriginal": 16.99,
+    "descuento": 65
+  },
+  "Nightmare of Decay": {
+    "appid": 1848450,
+    "precio": 1.49,
+    "precioOriginal": 4.99,
+    "descuento": 70
+  },
+  "Ghost Exorcism INC.": {
+    "appid": 1618540,
+    "precio": 5.99,
+    "precioOriginal": 11.99,
+    "descuento": 50
+  },
+  "Monster Hunter Wilds": {
+    "appid": 2246340,
+    "precio": 21.75,
+    "precioOriginal": 29,
+    "descuento": 25
+  },
+  "Star Trek: Voyager - Across the Unknown": {
+    "appid": 2643390,
+    "precio": 20.99,
+    "precioOriginal": 29.99,
+    "descuento": 30
+  },
+  "Sherlock Holmes Chapter One": {
+    "appid": 1137300,
+    "precio": 2.69,
+    "precioOriginal": 26.99,
+    "descuento": 90
+  },
+  "Colony Ship: A Post-Earth Role Playing Game": {
+    "appid": 648410,
+    "precio": 7.39,
+    "precioOriginal": 18.49,
+    "descuento": 60
+  },
+  "Strike Force Heroes": {
+    "appid": 1981820,
+    "precio": 6.29,
+    "precioOriginal": 10.49,
+    "descuento": 40
+  },
+  "Active Matter": {
+    "appid": 2887580,
+    "precio": 23.99,
+    "precioOriginal": 29.99,
+    "descuento": 20
+  },
+  "En Garde!": {
+    "appid": 1654660,
+    "precio": 2.62,
+    "precioOriginal": 10.49,
+    "descuento": 75
+  },
+  "MiSide": {
+    "appid": 2527500,
+    "precio": 6.39,
+    "precioOriginal": 7.99,
+    "descuento": 20
+  },
+  "Savage Lands": {
+    "appid": 307880,
+    "precio": 1.99,
+    "precioOriginal": 3.99,
+    "descuento": 50
+  },
+  "Tape to Tape": {
+    "appid": 1566200,
+    "precio": 9.44,
+    "precioOriginal": 10.49,
+    "descuento": 10
+  },
+  "Jusant": {
+    "appid": 1977170,
+    "precio": 4.99,
+    "precioOriginal": 12.49,
+    "descuento": 60
+  },
+  "Staffer Case: A Supernatural Mystery Adventure": {
+    "appid": 2128480,
+    "precio": 4.76,
+    "precioOriginal": 8.99,
+    "descuento": 47
+  },
+  "The Walking Dead": {
+    "appid": 207610,
+    "precio": 1.59,
+    "precioOriginal": 7.99,
+    "descuento": 80
+  },
+  "Per Aspera": {
+    "appid": 803050,
+    "precio": 3.74,
+    "precioOriginal": 14.99,
+    "descuento": 75
+  },
+  "Cobalt Core": {
+    "appid": 2179850,
+    "precio": 5.24,
+    "precioOriginal": 10.49,
+    "descuento": 50
+  },
+  "LORT": {
+    "appid": 2956680,
+    "precio": 5.19,
+    "precioOriginal": 7.99,
+    "descuento": 35
+  },
+  "Miss Neko": {
+    "appid": 1101450,
+    "precio": 0.49,
+    "precioOriginal": 0.99,
+    "descuento": 51
+  },
+  "Birth": {
+    "appid": 1889040,
+    "precio": 2.83,
+    "precioOriginal": 6.29,
+    "descuento": 55
+  },
+  "Hell Let Loose": {
+    "appid": 686810,
+    "precio": 9.24,
+    "precioOriginal": 36.99,
+    "descuento": 75
+  },
+  "KARMA: The Dark World": {
+    "appid": 1376200,
+    "precio": 6.49,
+    "precioOriginal": 12.49,
+    "descuento": 48
+  },
+  "s.p.l.i.t": {
+    "appid": 3684610,
+    "precio": 1.29,
+    "precioOriginal": 1.99,
+    "descuento": 35
+  },
+  "Football, Tactics & Glory": {
+    "appid": 375530,
+    "precio": 5.39,
+    "precioOriginal": 13.49,
+    "descuento": 60
+  },
+  "Master of Command": {
+    "appid": 2878450,
+    "precio": 9.09,
+    "precioOriginal": 12.99,
+    "descuento": 30
+  },
+  "Murky Divers": {
+    "appid": 2963880,
+    "precio": 3.01,
+    "precioOriginal": 5.49,
+    "descuento": 45
+  },
+  "The Outlast Trials": {
+    "appid": 1304930,
+    "precio": 5.69,
+    "precioOriginal": 18.99,
+    "descuento": 70
+  },
+  "Pathologic Classic HD": {
+    "appid": 384110,
+    "precio": 0.72,
+    "precioOriginal": 7.29,
+    "descuento": 90
+  },
+  "Inscryption": {
+    "appid": 1092790,
+    "precio": 4.19,
+    "precioOriginal": 10.49,
+    "descuento": 60
+  },
+  "MOLE": {
+    "appid": 4064510,
+    "precio": 5.24,
+    "precioOriginal": 6.99,
+    "descuento": 25
+  },
+  "Loddlenaut": {
+    "appid": 1644940,
+    "precio": 2.69,
+    "precioOriginal": 8.99,
+    "descuento": 70
+  },
+  "我在地府打麻将 - Demonic Mahjong": {
+    "appid": 3444020,
+    "precio": 6.74,
+    "precioOriginal": 8.99,
+    "descuento": 25
+  },
+  "Wild Assault / 兽猎突袭": {
+    "appid": 2827230,
+    "precio": 3.19,
+    "precioOriginal": 7.99,
+    "descuento": 60
+  },
+  "The Room VR: A Dark Matter": {
+    "appid": 1104380,
+    "precio": 3.12,
+    "precioOriginal": 12.49,
+    "descuento": 75
+  },
+  "Skullgirls 2nd Encore": {
+    "appid": 245170,
+    "precio": 6.24,
+    "precioOriginal": 24.99,
+    "descuento": 75
+  },
+  "Little Nightmares": {
+    "appid": 424840,
+    "precio": 5.99,
+    "precioOriginal": 23.99,
+    "descuento": 75
+  },
+  "Two Worlds II HD": {
+    "appid": 7520,
+    "precio": 3.74,
+    "precioOriginal": 12.49,
+    "descuento": 70
+  },
+  "The Séance of Blake Manor": {
+    "appid": 1395520,
+    "precio": 7.34,
+    "precioOriginal": 10.49,
+    "descuento": 30
+  },
+  "White Day: A Labyrinth Named School": {
+    "appid": 466130,
+    "precio": 1.49,
+    "precioOriginal": 14.99,
+    "descuento": 90
+  },
+  "SWORN": {
+    "appid": 1763250,
+    "precio": 4.24,
+    "precioOriginal": 12.49,
+    "descuento": 66
+  },
+  "Gladiator Guild Manager": {
+    "appid": 1043260,
+    "precio": 2.63,
+    "precioOriginal": 7.99,
+    "descuento": 67
+  },
+  "The Dark Pictures Anthology: The Devil in Me": {
+    "appid": 1567020,
+    "precio": 11.83,
+    "precioOriginal": 31.99,
+    "descuento": 63
+  },
+  "Penumbra Overture": {
+    "appid": 22180,
+    "precio": 1.15,
+    "precioOriginal": 5.79,
+    "descuento": 80
+  },
+  "CASE: Animatronics": {
+    "appid": 489360,
+    "precio": 0.99,
+    "precioOriginal": 9.99,
+    "descuento": 90
+  },
+  "Just a To the Moon Series Beach Episode": {
+    "appid": 2159210,
+    "precio": 2.02,
+    "precioOriginal": 4.49,
+    "descuento": 55
+  },
+  "Roots of Pacha": {
+    "appid": 1245560,
+    "precio": 7.49,
+    "precioOriginal": 12.49,
+    "descuento": 40
+  },
+  "The Darkside Detective": {
+    "appid": 368390,
+    "precio": 3.14,
+    "precioOriginal": 6.99,
+    "descuento": 55
+  },
+  "Forgive Me Father": {
+    "appid": 1590910,
+    "precio": 2.74,
+    "precioOriginal": 10.99,
+    "descuento": 75
+  },
+  "WRC 9 FIA World Rally Championship": {
+    "appid": 1267540,
+    "precio": 1.49,
+    "precioOriginal": 14.99,
+    "descuento": 90
+  },
+  "Aliens: Fireteam Elite 2": {
+    "appid": 3448650,
+    "precio": 39.99,
+    "precioOriginal": 49.99,
+    "descuento": 20
+  },
+  "M.A.S.S. Builder": {
+    "appid": 956680,
+    "precio": 8.74,
+    "precioOriginal": 12.49,
+    "descuento": 30
+  },
+  "Ghost Exile": {
+    "appid": 1807080,
+    "precio": 1.99,
+    "precioOriginal": 3.99,
+    "descuento": 50
+  },
+  "FlatOut 3: Chaos & Destruction": {
+    "appid": 201510,
+    "precio": 0.54,
+    "precioOriginal": 5.49,
+    "descuento": 90
+  },
+  "I Have No Mouth, and I Must Scream": {
+    "appid": 245390,
+    "precio": 0.86,
+    "precioOriginal": 5.79,
+    "descuento": 85
+  },
+  "亿万恋人 Billionaire Lovers": {
+    "appid": 1578860,
+    "precio": 2.09,
+    "precioOriginal": 2.99,
+    "descuento": 30
+  },
+  "Mini Cozy Room: Lo-Fi": {
+    "appid": 3511030,
+    "precio": 1.79,
+    "precioOriginal": 2.99,
+    "descuento": 40
+  },
+  "Subliminal": {
+    "appid": 2300840,
+    "precio": 4.63,
+    "precioOriginal": 5.79,
+    "descuento": 20
+  },
+  "Hamster Hunter": {
+    "appid": 2726490,
+    "precio": 1.64,
+    "precioOriginal": 2.99,
+    "descuento": 45
+  },
+  "Hell Clock": {
+    "appid": 1782460,
+    "precio": 5.76,
+    "precioOriginal": 10.49,
+    "descuento": 45
+  },
+  "NEKOPARA Extra": {
+    "appid": 899970,
+    "precio": 1.19,
+    "precioOriginal": 2.99,
+    "descuento": 60
+  },
+  "Inkbound": {
+    "appid": 1062810,
+    "precio": 3.74,
+    "precioOriginal": 14.99,
+    "descuento": 75
+  },
+  "Autonauts": {
+    "appid": 979120,
+    "precio": 2.09,
+    "precioOriginal": 10.49,
+    "descuento": 80
+  },
+  "The Age of Decadence": {
+    "appid": 230070,
+    "precio": 3.19,
+    "precioOriginal": 7.99,
+    "descuento": 60
+  },
+  "DARQ: Complete Edition": {
+    "appid": 433550,
+    "precio": 4.99,
+    "precioOriginal": 19.99,
+    "descuento": 75
+  },
+  "Crossroads Inn Anniversary Edition": {
+    "appid": 867290,
+    "precio": 2.13,
+    "precioOriginal": 8.55,
+    "descuento": 75
+  },
+  "Dark Hours": {
+    "appid": 2208570,
+    "precio": 4.19,
+    "precioOriginal": 6.99,
+    "descuento": 40
+  },
+  "Idols of Ash": {
+    "appid": 4450800,
+    "precio": 1.75,
+    "precioOriginal": 2.19,
+    "descuento": 20
+  },
+  "Blasphemous 2": {
+    "appid": 2114740,
+    "precio": 7.47,
+    "precioOriginal": 21.99,
+    "descuento": 66
+  },
+  "Fears to Fathom - Woodbury Getaway": {
+    "appid": 2961530,
+    "precio": 2.89,
+    "precioOriginal": 5.79,
+    "descuento": 50
+  },
+  "Outlast 2": {
+    "appid": 414700,
+    "precio": 1.04,
+    "precioOriginal": 10.49,
+    "descuento": 90
+  },
+  "GOD EATER 2 Rage Burst": {
+    "appid": 438490,
+    "precio": 3.99,
+    "precioOriginal": 39.99,
+    "descuento": 90
+  },
+  "Overcooked! 2": {
+    "appid": 728880,
+    "precio": 8.83,
+    "precioOriginal": 25.99,
+    "descuento": 66
+  },
+  "35MM": {
+    "appid": 466500,
+    "precio": 0.99,
+    "precioOriginal": 4.99,
+    "descuento": 80
+  },
+  "Dice & Fold": {
+    "appid": 2693930,
+    "precio": 1.59,
+    "precioOriginal": 3.99,
+    "descuento": 60
+  },
+  "The Cabin Factory": {
+    "appid": 3311740,
+    "precio": 1.39,
+    "precioOriginal": 1.99,
+    "descuento": 30
+  },
+  "Who's Lila?": {
+    "appid": 1697700,
+    "precio": 2.63,
+    "precioOriginal": 6.59,
+    "descuento": 60
+  },
+  "Ace Attorney Investigations Collection": {
+    "appid": 2401970,
+    "precio": 17.4,
+    "precioOriginal": 29,
+    "descuento": 40
+  },
+  "Growing Up": {
+    "appid": 1191120,
+    "precio": 6.74,
+    "precioOriginal": 14.99,
+    "descuento": 55
+  },
+  "Don't Starve": {
+    "appid": 219740,
+    "precio": 0.82,
+    "precioOriginal": 3.29,
+    "descuento": 75
+  },
+  "Eclipsium": {
+    "appid": 2419670,
+    "precio": 5.1,
+    "precioOriginal": 7.29,
+    "descuento": 30
+  },
+  "Frozenheim": {
+    "appid": 1134100,
+    "precio": 4.19,
+    "precioOriginal": 13.99,
+    "descuento": 70
+  },
+  "Arena de Blackthorn": {
+    "appid": 1194930,
+    "precio": 4.37,
+    "precioOriginal": 12.49,
+    "descuento": 65
+  },
+  "Megaquarium": {
+    "appid": 600480,
+    "precio": 3.74,
+    "precioOriginal": 12.49,
+    "descuento": 70
+  },
+  "Caveblazers": {
+    "appid": 452060,
+    "precio": 0.52,
+    "precioOriginal": 5.79,
+    "descuento": 91
+  },
+  "Railroader": {
+    "appid": 1683150,
+    "precio": 11.24,
+    "precioOriginal": 14.99,
+    "descuento": 25
+  },
+  "Shadow of the Tomb Raider: Definitive Edition": {
+    "appid": 750920,
+    "precio": 1.99,
+    "precioOriginal": 19.99,
+    "descuento": 90
+  },
+  "Dead Bits": {
+    "appid": 303390,
+    "precio": 0.44,
+    "precioOriginal": 4.49,
+    "descuento": 90
+  },
+  "Turok": {
+    "appid": 405820,
+    "precio": 2.99,
+    "precioOriginal": 19.99,
+    "descuento": 85
+  },
+  "Killer Klowns From Outer Space: The Game": {
+    "appid": 1556100,
+    "precio": 9.49,
+    "precioOriginal": 18.99,
+    "descuento": 50
+  },
+  "Deponia: The Complete Journey": {
+    "appid": 292910,
+    "precio": 1.44,
+    "precioOriginal": 14.49,
+    "descuento": 90
+  },
+  "OMORI": {
+    "appid": 1150690,
+    "precio": 15.99,
+    "precioOriginal": 19.99,
+    "descuento": 20
+  },
+  "人魅": {
+    "appid": 2128940,
+    "precio": 4.05,
+    "precioOriginal": 5.79,
+    "descuento": 30
+  },
+  "Worms Reloaded": {
+    "appid": 22600,
+    "precio": 2.09,
+    "precioOriginal": 10.49,
+    "descuento": 80
+  },
+  "Alone in the Dark": {
+    "appid": 1310410,
+    "precio": 4.74,
+    "precioOriginal": 18.99,
+    "descuento": 75
+  },
+  "Green Hell": {
+    "appid": 815370,
+    "precio": 1.24,
+    "precioOriginal": 12.49,
+    "descuento": 90
+  },
+  "S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition": {
+    "appid": 2427430,
+    "precio": 8.03,
+    "precioOriginal": 11.99,
+    "descuento": 33
+  },
+  "Spacebase DF-9": {
+    "appid": 246090,
+    "precio": 1.49,
+    "precioOriginal": 9.99,
+    "descuento": 85
+  },
+  "SYNDUALITY Echo of Ada": {
+    "appid": 1245480,
+    "precio": 11.19,
+    "precioOriginal": 31.99,
+    "descuento": 65
+  },
+  "Grimshire": {
+    "appid": 2238470,
+    "precio": 5.99,
+    "precioOriginal": 7.99,
+    "descuento": 25
+  },
+  "BioShock™": {
+    "appid": 7670,
+    "precio": 4.99,
+    "precioOriginal": 19.99,
+    "descuento": 75
+  },
+  "At Dead Of Night": {
+    "appid": 1450830,
+    "precio": 6.36,
+    "precioOriginal": 8.49,
+    "descuento": 25
+  },
+  "SILENT HILL 2": {
+    "appid": 2124490,
+    "precio": 14.79,
+    "precioOriginal": 36.99,
+    "descuento": 60
+  },
+  "Apollo Justice: Ace Attorney Trilogy": {
+    "appid": 2187220,
+    "precio": 19.5,
+    "precioOriginal": 39,
+    "descuento": 50
+  },
+  "GONE Fishing": {
+    "appid": 3645890,
+    "precio": 3.87,
+    "precioOriginal": 5.79,
+    "descuento": 33
   }
 }
