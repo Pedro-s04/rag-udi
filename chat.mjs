@@ -3,6 +3,7 @@
 //   node --env-file=.env chat.mjs   ->   http://localhost:3000
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
+import { randomUUID } from "node:crypto";
 import { embedding, responder } from "./api.mjs";
 import { buscar } from "./buscar.mjs";
 
@@ -10,6 +11,17 @@ const PUERTO = Number(process.env.PUERTO ?? 3000);
 // Los prompts se leen en cada pregunta: si los editás, el cambio vale sin reiniciar.
 const leerPrompt = archivo => readFile(archivo, "utf8");
 const UMBRAL = Number(process.env.UMBRAL ?? 0);
+
+// Los prompts armados quedan acá, en el servidor, bajo un id al azar: la página solo
+// devuelve el id. Así nadie puede usar /api/responder para mandarle a Gemini lo que quiera
+// con tu API_KEY.
+const PROMPTS_GUARDADOS = new Map();
+function guardarPrompt(prompt) {
+  const id = randomUUID();
+  PROMPTS_GUARDADOS.set(id, prompt);
+  if (PROMPTS_GUARDADOS.size > 50) PROMPTS_GUARDADOS.delete(PROMPTS_GUARDADOS.keys().next().value);
+  return id;
+}
 
 // la etiqueta con la que se cita cada fragmento, igual que en preguntar.mjs
 const etiqueta = r => `${r.fuente} · ${r.seccion ?? `fragmento ${r.posicion}`}`;
@@ -68,11 +80,15 @@ async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
     })),
     msBusqueda,
     prompt,
+    idPrompt: prompt && guardarPrompt(prompt),
   };
 }
 
-// Etapa 4: el prompt armado va a Gemini.
-async function responderPaso({ prompt }) {
+// Etapa 4: el prompt armado va a Gemini. Solo los que armó /api/buscar, y una vez cada uno.
+async function responderPaso({ idPrompt }) {
+  const prompt = PROMPTS_GUARDADOS.get(idPrompt);
+  if (!prompt) throw new Error("Esa pregunta ya no está: volvé a hacerla.");
+  PROMPTS_GUARDADOS.delete(idPrompt);
   const t = performance.now();
   const respuesta = await responder(prompt);
   return { respuesta, ms: performance.now() - t };
@@ -106,6 +122,11 @@ const servidor = createServer(async (req, res) => {
     if (req.method === "GET" && req.url === "/") {
       return enviar(res, 200, "text/html; charset=utf-8", await readFile("chat.html"));
     }
+    // Solo JSON: un formulario o un script de otra página no puede mandarlo sin permiso
+    // del navegador (CORS), así que otra pestaña no puede usar el chat a tus espaldas.
+    if (req.method === "POST" && !req.headers["content-type"]?.startsWith("application/json")) {
+      return enviar(res, 415, "application/json", JSON.stringify({ error: "Solo acepto JSON" }));
+    }
     if (req.method === "POST" && req.url === "/api/buscar") {
       const { pregunta, descuentoMin, precioMax } = await leerJSON(req);
       if (!pregunta?.trim()) return enviar(res, 400, "application/json", JSON.stringify({ error: "La pregunta está vacía" }));
@@ -134,7 +155,8 @@ servidor.on("error", e => {
   throw e;
 });
 
-servidor.listen(PUERTO, () => {
+// Solo desde esta compu (127.0.0.1): nadie del mismo WiFi puede entrar y gastar tu API_KEY.
+servidor.listen(PUERTO, "127.0.0.1", () => {
   console.log(`Chat listo en http://localhost:${PUERTO}`);
   if (!process.env.UMBRAL) console.log("(sin UMBRAL en el .env: no se descarta ningún fragmento)");
 });

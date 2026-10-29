@@ -290,7 +290,7 @@ async function preguntar(pregunta) {
 
   // Gemini arranca ya, mientras se explican los pasos anteriores a la respuesta.
   const inicio = performance.now();
-  const respuesta = datos.prompt ? api("/api/responder", { prompt: datos.prompt }) : null;
+  const respuesta = datos.idPrompt ? api("/api/responder", { idPrompt: datos.idPrompt }) : null;
   respuesta?.catch(() => {});   // el error se muestra recién en el paso 4
 
   nota.textContent = "";
