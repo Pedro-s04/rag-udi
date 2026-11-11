@@ -58,4 +58,10 @@ async function pedir<T>(ruta: string, cuerpo?: unknown): Promise<T> {
 
 export const buscar = (pregunta: string, filtros: Filtros) => pedir<Pasos>('/api/buscar', { pregunta, ...filtros })
 export const responder = (idPrompt: string) => pedir<{ respuesta: string; ms: number }>('/api/responder', { idPrompt })
-export const juegos = () => pedir<Destacado[]>('/api/juegos')
+// Los destacados se piden una vez por página: los usan el fondo del hero y la sección de juegos.
+// Si falla, se olvida la promesa para poder reintentar.
+let juegosPedidos: Promise<Destacado[]> | null = null
+export const juegos = () => {
+  juegosPedidos ??= pedir<Destacado[]>('/api/juegos').catch(e => { juegosPedidos = null; throw e })
+  return juegosPedidos
+}

@@ -1,21 +1,16 @@
 import { AnimatedGradientText } from '@/components/ui/animated-gradient-text'
-import { Meteors } from '@/components/ui/meteors'
-import { RetroGrid } from '@/components/ui/retro-grid'
 import { TypingAnimation } from '@/components/ui/typing-animation'
 import { useChat } from '@/lib/ChatProvider'
 import { Chat } from './Chat'
+import { FondoJuegos } from './FondoJuegos'
 import { Pixel } from './Pixel'
 
 export function Hero() {
   const { estado, pensando } = useChat()
   const animo = pensando ? 'pensando' : estado.respuesta ? 'feliz' : 'normal'
   return (
-    <section id="chat" className="relative scroll-mt-24 px-4 pb-16">
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[900px] bg-[radial-gradient(50%_50%_at_50%_0%,rgba(26,115,232,.35),transparent_70%),radial-gradient(35%_40%_at_85%_35%,rgba(123,63,228,.22),transparent_70%)]" />
-      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <Meteors number={12} />
-        <RetroGrid className="opacity-60" lightLineColor="#66c0f4" darkLineColor="#66c0f4" />
-      </div>
+    <section id="chat" className="relative -mt-[88px] scroll-mt-24 px-4 pt-[88px] pb-24">
+      <FondoJuegos />
 
       <div className="relative mx-auto grid max-w-[1180px] items-start gap-10 pt-8 lg:grid-cols-[1fr_1.3fr]">
         <div className="flex flex-col gap-4">

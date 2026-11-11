@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ComoPiensa } from '@/components/ComoPiensa'
 import { Destacados } from '@/components/Destacados'
 import { DetrasDeEscena } from '@/components/DetrasDeEscena'
+import { Footer } from '@/components/Footer'
 import { Hero } from '@/components/Hero'
 import { Navbar } from '@/components/Navbar'
 import { SeccionPC } from '@/components/SeccionPC'
@@ -20,9 +21,7 @@ export default function App() {
           <ComoPiensa />
           <SeccionPC onEntrar={entrar} />
         </main>
-        <footer className="border-t border-borde px-4 py-8 text-center font-mono text-xs text-gris">
-          Proyecto independiente, sin afiliación con Valve. Precios y datos de Steam. · ollama · pgvector · gemini
-        </footer>
+        <Footer />
       </div>
       {adentro && <DetrasDeEscena onSalir={() => setAdentro(false)} />}
     </ChatProvider>
