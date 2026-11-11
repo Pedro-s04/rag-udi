@@ -6,7 +6,7 @@
 // Uso: node bajar-destacados.mjs [porLista]      (por omisión 12 de cada lista; tarda ~1 minuto)
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { PAIS, IDIOMA, TIENDA, ESPERA, esperar, pedirJSON, detalle } from "./steam.mjs";
-import { elegirDestacados, fichaDestacado, ofertasPorResenas } from "./destacados.mjs";
+import { elegirDestacados, fichaDestacado, ofertasPorResenas, urlCaja } from "./destacados.mjs";
 
 const POR_LISTA = Number(process.argv[2] ?? 12);
 const leer = async archivo => JSON.parse(await readFile(archivo, "utf8").catch(() => "{}"));
@@ -34,6 +34,15 @@ for (const { appid, origen } of candidatos) {
   cupo[origen]++;
   console.log(`  ${origen.padEnd(11)} ${j.name}${j.movies?.length ? "" : "  (sin tráiler)"}`);
 }
+
+// La portada vertical (tipo caja) de todos, en un solo pedido a la API de la tienda.
+const entrada = { ids: destacados.map(d => ({ appid: d.appid })), context: { language: IDIOMA, country_code: PAIS.toUpperCase() },
+                  data_request: { include_assets: true } };
+const { response } = await pedirJSON("https://api.steampowered.com/IStoreBrowseService/GetItems/v1?input_json=" +
+                                     encodeURIComponent(JSON.stringify(entrada)));
+const assetsDe = new Map((response.store_items ?? []).map(i => [i.appid, i.assets]));
+for (const d of destacados) d.caja = urlCaja(assetsDe.get(d.appid));
+console.log(`Portadas verticales: ${destacados.filter(d => d.caja).length} de ${destacados.length}`);
 
 await mkdir("datos", { recursive: true });
 await writeFile("datos/destacados.json", JSON.stringify(destacados, null, 2));

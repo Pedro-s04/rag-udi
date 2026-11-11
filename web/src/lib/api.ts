@@ -35,6 +35,7 @@ export type Destacado = {
   gratis: boolean
   generos: string[]
   portada: string
+  caja: string | null
   capsula: string
   capturas: string[]
   trailer: { miniatura: string; hls: string } | null

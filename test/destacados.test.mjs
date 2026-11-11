@@ -1,6 +1,15 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { elegirDestacados, fichaDestacado, ofertasPorResenas } from "../destacados.mjs";
+import { elegirDestacados, fichaDestacado, ofertasPorResenas, urlCaja } from "../destacados.mjs";
+
+test("arma la URL de la portada vertical (tipo caja) desde los assets de la tienda", () => {
+  const assets = { asset_url_format: "steam/apps/10/${FILENAME}?t=5", library_capsule_2x: "abc/library_capsule_2x.jpg", library_capsule: "abc/library_capsule.jpg" };
+  assert.equal(urlCaja(assets), "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/abc/library_capsule_2x.jpg?t=5");
+  assert.equal(urlCaja({ ...assets, library_capsule_2x: undefined }),
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/abc/library_capsule.jpg?t=5");
+  assert.equal(urlCaja({ asset_url_format: "x" }), null);
+  assert.equal(urlCaja(undefined), null);
+});
 
 test("ordena las ofertas del corpus de más a menos reseñas", () => {
   const md = [

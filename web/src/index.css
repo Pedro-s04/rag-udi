@@ -254,3 +254,53 @@ body { background: #05070b; }
 .punto:nth-child(3) { animation-delay: .4s }
 .emerge { animation: emerge .8s ease-out both }
 .entra { animation: entra .45s ease-out both }
+
+/* Caja de juego física (sección de juegos destacados) */
+.caja-escena { perspective: 1600px; z-index: 1; }
+.caja-escena[data-abierta='true'] { z-index: 30; }
+.caja {
+  position: absolute; inset: 0; transform-style: preserve-3d;
+  transform: rotateY(24deg) rotateX(10deg) rotateZ(-1.5deg);
+  transition: transform .55s cubic-bezier(.2, .8, .2, 1);
+  filter: drop-shadow(0 22px 26px rgba(0, 0, 0, .55));
+}
+/* abierta: el centro del libro (la bisagra) queda en el centro de su lugar; las columnas de los bordes se corren para no salirse */
+.caja-escena[data-abierta='true'] .caja { transform: translateX(65%) scale(1.3); }
+@media (min-width: 1024px) {
+  .caja-escena:nth-child(5n+1)[data-abierta='true'] .caja { transform: translateX(135%) scale(1.3); }
+  .caja-escena:nth-child(5n)[data-abierta='true'] .caja { transform: translateX(-5%) scale(1.3); }
+}
+@media (max-width: 1023px) {
+  .caja-escena:nth-child(2n+1)[data-abierta='true'] .caja { transform: translateX(135%) scale(1.3); }
+  .caja-escena:nth-child(2n)[data-abierta='true'] .caja { transform: translateX(-5%) scale(1.3); }
+}
+
+/* bandeja (adentro) y lomo */
+.caja-bandeja {
+  position: absolute; inset: 0; border-radius: 10px; transform: translateZ(-10px);
+  background: linear-gradient(160deg, #18212c, #0a0e13); border: 3px solid #223042;
+}
+.caja-borde {
+  position: absolute; top: 0; bottom: 0; left: 0; width: 10px; border-radius: 10px 0 0 10px;
+  background: linear-gradient(90deg, #0d1117, #223042);
+}
+.caja::before, .caja::after { content: ''; position: absolute; background: linear-gradient(180deg, #2a3a4f, #141c26); }
+/* lomo izquierdo y canto derecho: el espesor de la caja */
+.caja::before { top: 0; bottom: 0; left: 0; width: 10px; transform-origin: left center; transform: rotateY(90deg); border-radius: 2px; }
+.caja::after { top: 0; bottom: 0; right: 0; width: 10px; transform-origin: right center; transform: rotateY(-90deg); border-radius: 2px; }
+
+/* tapa: gira sobre la bisagra izquierda */
+.caja-tapa {
+  position: absolute; inset: 0; transform-origin: left center; transform-style: preserve-3d;
+  transition: transform .75s cubic-bezier(.3, .7, .2, 1) .12s;
+}
+.caja-escena[data-abierta='true'] .caja-tapa { transform: rotateY(-168deg); }
+.caja-cara { position: absolute; inset: 0; border-radius: 10px; overflow: hidden; backface-visibility: hidden; }
+.caja-frente { border: 3px solid #1f2b3a; background: #0d1117; }
+.caja-dorso { transform: rotateY(180deg); border: 3px solid #1f2b3a; background: linear-gradient(160deg, #142030, #0b1119); }
+/* brillo de plástico que se mueve al abrir */
+.caja-brillo {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(115deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 70%, rgba(255,255,255,.08) 100%);
+}
+.caja-pantalla { box-shadow: 0 0 0 1px #2a3a4d, 0 0 30px rgba(102, 192, 244, .25); }

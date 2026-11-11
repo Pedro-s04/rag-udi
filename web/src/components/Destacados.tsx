@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Marquee } from '@/components/ui/marquee'
 import { juegos as pedirJuegos, type Destacado } from '@/lib/api'
-import { TarjetaJuego } from './TarjetaJuego'
+import { CajaJuego } from './CajaJuego'
 
 type Filtro = 'todos' | Destacado['origen']
 const FILTROS: [Filtro, string][] = [['todos', 'Todos'], ['mas-vendido', 'Más vendidos'], ['popular', 'Más jugados'], ['oferta', 'Ofertas']]
@@ -33,7 +33,7 @@ export function Destacados() {
             ))}
           </div>
         </div>
-        <p className="mt-2 text-sm text-gris">Los más vendidos, los más jugados y las ofertas más conocidas, con precios reales de la tienda. Pasá el mouse para ver el tráiler.</p>
+        <p className="mt-2 text-sm text-gris">Los más vendidos, los más jugados y las ofertas más conocidas, con precios reales de la tienda. Pasá el mouse por una caja para abrirla y ver el tráiler.</p>
       </div>
 
       {generos.length > 0 && (
@@ -47,8 +47,8 @@ export function Destacados() {
       <div className="mx-auto mt-6 max-w-[1180px]">
         {error && <p className="rounded-xl border border-red-500/40 bg-red-950/40 p-4 text-red-200">No pude cargar los juegos: {error}</p>}
         {!juegos && !error && <p className="text-gris">Cargando juegos de Steam…</p>}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {visibles.map(j => <TarjetaJuego key={j.appid} juego={j} />)}
+        <div className="grid grid-cols-2 gap-x-8 gap-y-14 px-2 pt-6 lg:grid-cols-5">
+          {visibles.map(j => <CajaJuego key={j.appid} juego={j} />)}
         </div>
       </div>
     </section>

@@ -16,6 +16,15 @@ export function ofertasPorResenas(markdown, juegos) {
     .map(o => o.appid);
 }
 
+// La portada vertical (600x900, como la tapa de una caja) a partir de los assets que devuelve
+// IStoreBrowseService/GetItems. Los juegos nuevos la guardan en una ruta con hash.
+const CDN = "https://shared.akamai.steamstatic.com/store_item_assets/";
+export function urlCaja(assets) {
+  const archivo = assets?.library_capsule_2x ?? assets?.library_capsule;
+  if (!archivo || !assets.asset_url_format) return null;
+  return CDN + assets.asset_url_format.replace("${FILENAME}", archivo);
+}
+
 // Hasta porLista de cada lista, en este orden, sin repetir appid (gana el primero).
 export function elegirDestacados({ masVendidos, populares, ofertas }, porLista = 12) {
   const elegidos = new Map();
