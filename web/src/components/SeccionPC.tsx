@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState, type RefObject } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { ShimmerButton } from '@/components/ui/shimmer-button'
@@ -29,9 +29,25 @@ function CamaraFrente() {
   return null
 }
 
-export function SeccionPC({ onEntrar }: { onEntrar: () => void }) {
+// ¿El elemento está en pantalla? (con un margen para que arranque un poco antes de llegar)
+function useEnPantalla(ref: RefObject<HTMLElement | null>) {
+  const [visible, setVisible] = useState(false)
+  useEffect(() => {
+    const el = ref.current
+    if (!el || !('IntersectionObserver' in window)) { setVisible(true); return }
+    const io = new IntersectionObserver(([e]) => setVisible(e.isIntersecting), { rootMargin: '200px' })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [ref])
+  return visible
+}
+
+export function SeccionPC({ onEntrar, pausada = false }: { onEntrar: () => void; pausada?: boolean }) {
   const desarme = useRef(0)
   const con3D = hayWebGL()
+  const marco = useRef<HTMLDivElement>(null)
+  // la escena solo se dibuja si se ve y no estás adentro de la PC (que tiene su propia escena)
+  const activa = useEnPantalla(marco) && !pausada
   const respaldo = <img src="/pc-respaldo.jpg" alt="El escritorio gamer con la PC de Pixel" className="size-full object-cover" />
   return (
     <section id="detras" className="relative scroll-mt-24 overflow-hidden px-4 py-20">
@@ -49,10 +65,10 @@ export function SeccionPC({ onEntrar }: { onEntrar: () => void }) {
             Ver detrás de escena
           </ShimmerButton>
         </div>
-        <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-2xl border border-borde bg-[#06080c] shadow-[0_30px_80px_rgba(0,0,0,.6)]">
+        <div ref={marco} className="relative mt-8 aspect-video w-full overflow-hidden rounded-2xl border border-borde bg-[#06080c] shadow-[0_30px_80px_rgba(0,0,0,.6)]">
           {con3D ? (
             <LimiteEscena respaldo={respaldo}>
-              <Lienzo etiqueta="Escritorio gamer en 3D con la PC de Pixel">
+              <Lienzo etiqueta="Escritorio gamer en 3D con la PC de Pixel" activo={activa}>
                 <CamaraFrente />
                 <Escritorio desarme={desarme} />
               </Lienzo>

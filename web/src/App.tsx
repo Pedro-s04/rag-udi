@@ -19,7 +19,7 @@ export default function App() {
           <Hero />
           <Destacados />
           <ComoPiensa />
-          <SeccionPC onEntrar={entrar} />
+          <SeccionPC onEntrar={entrar} pausada={adentro} />
         </main>
         <Footer />
       </div>
