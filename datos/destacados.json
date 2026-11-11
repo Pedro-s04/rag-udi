@@ -1,0 +1,972 @@
+[
+  {
+    "appid": 1172470,
+    "nombre": "Apex Legends™",
+    "origen": "mas-vendido",
+    "enCorpus": true,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Free to Play"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/dc5c390e9a273a7248f75c1b2d59987f6179323c/header_alt_assets_7.jpg?t=1794339458",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/0f7e056bbc3fb645cfd812a0154ebf3d53ef47f1/capsule_231x87_alt_assets_7.jpg?t=1794339458",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/61bab081f3fdc1373da42fa962497ed2ea760890/ss_61bab081f3fdc1373da42fa962497ed2ea760890.600x338.jpg?t=1794339458",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/51c8778e7d61d7834436c2e68084b17243711505/ss_51c8778e7d61d7834436c2e68084b17243711505.600x338.jpg?t=1794339458",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/f591a8185a61079f0d43ef2a59002f00ef496ffd/ss_f591a8185a61079f0d43ef2a59002f00ef496ffd.600x338.jpg?t=1794339458"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257490366/86ee0f323b7713eeb7986636e76e9a6b1dc6c77a/movie_600x337.jpg?t=1793731323",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1172470/756891131/fee6a815b821b7a2d21ecba7f994564efe82cd12/1793730568/hls_264_master.m3u8?t=1793731323"
+    },
+    "tienda": "https://store.steampowered.com/app/1172470"
+  },
+  {
+    "appid": 4530370,
+    "nombre": "Football Manager 27",
+    "origen": "mas-vendido",
+    "enCorpus": false,
+    "precio": 47.99,
+    "precioOriginal": 47.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Simuladores",
+      "Deportes",
+      "Estrategia"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4530370/32b41d18ffaac3d2e1dc1a9c3915538db0ba3fca/header.jpg?t=1794333658",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4530370/3d06aef381c925bb6c091f13be44dd294b205a72/capsule_231x87.jpg?t=1794333658",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4530370/cdf9b7284171c68a66f187e8af0ed95f60d960cb/ss_cdf9b7284171c68a66f187e8af0ed95f60d960cb.600x338.jpg?t=1794333658",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4530370/6e20ffcade92df4d1af48ca14d2cc420133b7469/ss_6e20ffcade92df4d1af48ca14d2cc420133b7469.600x338.jpg?t=1794333658",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4530370/1ae7c9eb7963a1b2e07464bfe2688f249e9ba55a/ss_1ae7c9eb7963a1b2e07464bfe2688f249e9ba55a.600x338.jpg?t=1794333658"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257499199/16dd7049c7b5b48721326cdac043420ba203f6cd/movie_600x337.jpg?t=1794326459",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/4530370/1558087152/d0fd0ddfed7d25d6fb8053b68510ead50d35f255/1794247879/hls_264_master.m3u8?t=1794326459"
+    },
+    "tienda": "https://store.steampowered.com/app/4530370"
+  },
+  {
+    "appid": 730,
+    "nombre": "Counter-Strike 2",
+    "origen": "mas-vendido",
+    "enCorpus": true,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Acción",
+      "Free to Play"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1793054556",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/942c04efaa5bc87afb6f2a97dbf17ac614c8a84d/capsule_231x87.jpg?t=1793054556",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/9c8b8fd6ebb2c84a1c38541369e6c05db7f1fbe0/ss_9c8b8fd6ebb2c84a1c38541369e6c05db7f1fbe0.600x338.jpg?t=1793054556",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/4ef95eed5fcd98c576bf13e024bc6c845b622132/ss_4ef95eed5fcd98c576bf13e024bc6c845b622132.600x338.jpg?t=1793054556",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_13bb35638c0267759276f511ee97064773b37a51.600x338.jpg?t=1793054556"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256972298/movie.293x165.jpg?t=1696005467",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/730/612468/aa5a28c78f12232e6b6839034550c28b162fad3e/1748810724/hls_264_master.m3u8?t=1696005467"
+    },
+    "tienda": "https://store.steampowered.com/app/730"
+  },
+  {
+    "appid": 4435490,
+    "nombre": "Call of Duty®: Modern Warfare® 4",
+    "origen": "mas-vendido",
+    "enCorpus": false,
+    "precio": 69.99,
+    "precioOriginal": 69.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/0c492be3204835d71e8b454b6eb1817f8ff68c0d/header.jpg?t=1794339680",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/50d218e79ead2650bc6b7360995cc8dd3fbe2c29/capsule_231x87.jpg?t=1794339680",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/ee5f6b6aebe4dc9e86b49c4e309d361b132df308/ss_ee5f6b6aebe4dc9e86b49c4e309d361b132df308.600x338.jpg?t=1794339680",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/6b8f4040a1e923f036e04d9eb21ecb0f866be57e/ss_6b8f4040a1e923f036e04d9eb21ecb0f866be57e.600x338.jpg?t=1794339680",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/10d6a60711209aa8019cedab4667532af49f5d2a/ss_10d6a60711209aa8019cedab4667532af49f5d2a.600x338.jpg?t=1794339680"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257493744/90018ab13d59930b0ee9ef5e8ca59f4ea1032439/movie_600x337.jpg?t=1793941320",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/4435490/1103940164/d586578b5c917a2879ff7923d40f9b8459d98952/1793908472/hls_264_master.m3u8?t=1793941320"
+    },
+    "tienda": "https://store.steampowered.com/app/4435490"
+  },
+  {
+    "appid": 227300,
+    "nombre": "Euro Truck Simulator 2",
+    "origen": "mas-vendido",
+    "enCorpus": true,
+    "precio": 2.64,
+    "precioOriginal": 10.59,
+    "descuento": 75,
+    "gratis": false,
+    "generos": [
+      "Indie",
+      "Simuladores"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1793285269",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1793285269",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/e040f74641ac21f15e3ec7c2415fc8b4de0b6bf9/ss_e040f74641ac21f15e3ec7c2415fc8b4de0b6bf9.600x338.jpg?t=1793285269",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/edbff61a062a49d1d97269e53b8afbffde05bb24/ss_edbff61a062a49d1d97269e53b8afbffde05bb24.600x338.jpg?t=1793285269",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/c610d985eb21cc22c26507b53cd843cfa0b3a00d/ss_c610d985eb21cc22c26507b53cd843cfa0b3a00d.600x338.jpg?t=1793285269"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256882174/movie.293x165.jpg?t=1683632053",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/227300/455253/f717b44f949ed6c824778b30d516147bdaaad95a/1750482436/hls_264_master.m3u8?t=1683632053"
+    },
+    "tienda": "https://store.steampowered.com/app/227300"
+  },
+  {
+    "appid": 578080,
+    "nombre": "PUBG: BATTLEGROUNDS",
+    "origen": "mas-vendido",
+    "enCorpus": true,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Multijugador masivo",
+      "Free to Play"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1792718193",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/14f42ab797699a9c9f137fda66582d8776da4330/capsule_231x87.jpg?t=1792718193",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/c16e2f2d122cae77a1cbaca19263df0f2d2214fa/ss_c16e2f2d122cae77a1cbaca19263df0f2d2214fa.600x338.jpg?t=1792718193",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/aa1c51a9b45c88e770b443d8d3cd28f3024b0760/ss_aa1c51a9b45c88e770b443d8d3cd28f3024b0760.600x338.jpg?t=1792718193",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/bf9b3de5896d4ec7ef9531938b26946cded81fdf/ss_bf9b3de5896d4ec7ef9531938b26946cded81fdf.600x338.jpg?t=1792718193"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257396880/a88e6e7c16ae88443bcb5616fa798d3b1beab45b/movie_600x337.jpg?t=1792718192",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/578080/257955410/053853dcb22ad0bd6094873105942ebbfc459148/1792717779/hls_264_master.m3u8?t=1792718192"
+    },
+    "tienda": "https://store.steampowered.com/app/578080"
+  },
+  {
+    "appid": 3393110,
+    "nombre": "AION 2",
+    "origen": "mas-vendido",
+    "enCorpus": true,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Multijugador masivo",
+      "Rol",
+      "Free to Play"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3393110/10aa4b096ebe6af0d1dd7882e5ba004271aef6f7/header.jpg?t=1792771538",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3393110/a5a6447c5d72174e8e9eb7dfc68d37a9597bf619/capsule_231x87.jpg?t=1792771538",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3393110/c31894a740fb2048cb1956039583131f6c11ece6/ss_c31894a740fb2048cb1956039583131f6c11ece6.600x338.jpg?t=1792771538",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3393110/94b3e9e03674e3a92c219f9c32587f6b32eccead/ss_94b3e9e03674e3a92c219f9c32587f6b32eccead.600x338.jpg?t=1792771538",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3393110/b453274cca4a9f7db77c1fb40d8863a14e36c0e1/ss_b453274cca4a9f7db77c1fb40d8863a14e36c0e1.600x338.jpg?t=1792771538"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257474835/d841da673a8c2c0996434d28e327e015c12fd9b8/movie_600x337.jpg?t=1792771526",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/3393110/1128588862/c7344c27c674672ff203bd7f2effad0f1c194434/1792715229/hls_264_master.m3u8?t=1792771526"
+    },
+    "tienda": "https://store.steampowered.com/app/3393110"
+  },
+  {
+    "appid": 570,
+    "nombre": "Dota 2",
+    "origen": "mas-vendido",
+    "enCorpus": true,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Acción",
+      "Estrategia",
+      "Free to Play"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_231x87.jpg?t=1791407503",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_ad8eee787704745ccdecdfde3a5cd2733704898d.600x338.jpg?t=1791407503",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_7ab506679d42bfc0c0e40639887176494e0466d9.600x338.jpg?t=1791407503",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_c9118375a2400278590f29a3537769c986ef6e39.600x338.jpg?t=1791407503"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256692021/movie.293x165.jpg?t=1762820639",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/570/116737/313addee2092d0bd6f538d164610061ea8bbe79c/1749859757/hls_264_master.m3u8?t=1762820639"
+    },
+    "tienda": "https://store.steampowered.com/app/570"
+  },
+  {
+    "appid": 4115450,
+    "nombre": "Phantom Blade Zero",
+    "origen": "mas-vendido",
+    "enCorpus": false,
+    "precio": 49.99,
+    "precioOriginal": 49.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Rol"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1793261976",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/aef06490c9a4ad912142fe3b766ee08a2b38ef80/capsule_231x87.jpg?t=1793261976",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/b2ebc232d3d88eafa8546f65b90d8dc8d2ece0b4/ss_b2ebc232d3d88eafa8546f65b90d8dc8d2ece0b4.600x338.jpg?t=1793261976",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/53cc6faf8d70d29593495b2eaffc4c08761989ce/ss_53cc6faf8d70d29593495b2eaffc4c08761989ce.600x338.jpg?t=1793261976",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/b0e2a5cbc38c67ffa2264d4067a6dc26aff2d9c6/ss_b0e2a5cbc38c67ffa2264d4067a6dc26aff2d9c6.600x338.jpg?t=1793261976"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257472891/c551106242db5c73694de7a91e1f6bfc2debe542/movie_600x337.jpg?t=1792637474",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/4115450/664334575/770d51a385d199e86d14445dfe938539582b6603/1792600747/hls_264_master.m3u8?t=1792637474"
+    },
+    "tienda": "https://store.steampowered.com/app/4115450"
+  },
+  {
+    "appid": 3669620,
+    "nombre": "Warhammer Survivors",
+    "origen": "mas-vendido",
+    "enCorpus": false,
+    "precio": 4.49,
+    "precioOriginal": 4.99,
+    "descuento": 10,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Casual",
+      "Indie",
+      "Rol"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669620/dc61fccdeec6b05a58fbcdd7b1d0bbbe1f6999ea/header.jpg?t=1794319205",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669620/10d13658e3bbef16b8bbcef51aa6965377be1359/capsule_231x87.jpg?t=1794319205",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669620/1712fd2c139929929c544c6728d962e27707b05f/ss_1712fd2c139929929c544c6728d962e27707b05f.600x338.jpg?t=1794319205",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669620/530db0d469982f4d9d85af6d53780dbdca0ffb5a/ss_530db0d469982f4d9d85af6d53780dbdca0ffb5a.600x338.jpg?t=1794319205",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669620/e924789f2e3160038d7f5836310bae8b0b05436f/ss_e924789f2e3160038d7f5836310bae8b0b05436f.600x338.jpg?t=1794319205"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257500080/fa613f601cb958cfe0b4e2acce95f24a9a3d5d3a/movie_600x337.jpg?t=1794304172",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/3669620/508720335/01b2f30503a2574e8ba6ff17b1f916b028ac3712/1794302090/hls_264_master.m3u8?t=1794304172"
+    },
+    "tienda": "https://store.steampowered.com/app/3669620"
+  },
+  {
+    "appid": 4262460,
+    "nombre": "ROB RUN",
+    "origen": "mas-vendido",
+    "enCorpus": false,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Acción",
+      "Multijugador masivo",
+      "Rol",
+      "Simuladores",
+      "Free to Play",
+      "Acceso anticipado"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/0cef00dbfabf5f15adbf8b18e84cc8ef53dce963/capsule_231x87.jpg?t=1793811654",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/258546065bdba3f2dc14b476a6c0ba8caaf5b367/ss_258546065bdba3f2dc14b476a6c0ba8caaf5b367.600x338.jpg?t=1793811654",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/021a08079176959be882c88607b13727f49c470f/ss_021a08079176959be882c88607b13727f49c470f.600x338.jpg?t=1793811654",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/838584dd1348b5a85f8e9bc840fbfe2b689f556c/ss_838584dd1348b5a85f8e9bc840fbfe2b689f556c.600x338.jpg?t=1793811654"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257316245/aa4f1905e0d321043233f4694c1c6e0ce41ef7ec/movie_600x337.jpg?t=1786449951",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/4262460/1670834948/526423354ca76fe8f929a805ace5aa0da933f385/1775656792/hls_264_master.m3u8?t=1786449951"
+    },
+    "tienda": "https://store.steampowered.com/app/4262460"
+  },
+  {
+    "appid": 4348910,
+    "nombre": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+    "origen": "mas-vendido",
+    "enCorpus": true,
+    "precio": 8.09,
+    "precioOriginal": 8.99,
+    "descuento": 10,
+    "gratis": false,
+    "generos": [
+      "Indie",
+      "Rol",
+      "Simuladores",
+      "Estrategia"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/66ad13c91ba06d7f0aa11b9fe0e53c3fe15bb9c3/header_alt_assets_3_spanish.jpg?t=1794162078",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/b34bac92cd37260ecead20b181eda3d0f928a373/capsule_231x87.jpg?t=1794162078",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/c3fd208d9830641a432822c2ffb762824980ce7b/ss_c3fd208d9830641a432822c2ffb762824980ce7b.600x338.jpg?t=1794162078",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/309930b942d4670222a3c94cff4d2c27a000bbb4/ss_309930b942d4670222a3c94cff4d2c27a000bbb4.600x338.jpg?t=1794162078",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/f60b54ed03b6d644bce610204ef44d7fbfa12b0f/ss_f60b54ed03b6d644bce610204ef44d7fbfa12b0f.600x338.jpg?t=1794162078"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257480740/b183111f9da804a069d69d8da96563b0203c5e52/movie_600x337.jpg?t=1793192060",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/4348910/1029376199/a658a0ad7992fdb9eba32eadff946e0d84c4d06c/1793112587/hls_264_master.m3u8?t=1793192060"
+    },
+    "tienda": "https://store.steampowered.com/app/4348910"
+  },
+  {
+    "appid": 431960,
+    "nombre": "Wallpaper Engine",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 3.29,
+    "precioOriginal": 3.29,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Casual",
+      "Indie",
+      "Animación y modelado",
+      "Diseño e ilustración",
+      "Edición fotográfica",
+      "Utilidades"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/header.jpg?t=1779452230",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/capsule_231x87.jpg?t=1779452230",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/ss_0fc9179d3d56a05253a04e43d86d131766aed03d.600x338.jpg?t=1779452230",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/ss_39ed0a9730b67a930acb8ceed221cc968bee7731.600x338.jpg?t=1779452230",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/ss_6e5e8fdbb92802cc84151236b5b35d33e9ac6f47.600x338.jpg?t=1779452230"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256735610/movie.293x165.jpg?t=1637933023",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/431960/196034/4f589f0c2fd3411f08cd487919145ff67d9245df/1750530225/hls_264_master.m3u8?t=1637933023"
+    },
+    "tienda": "https://store.steampowered.com/app/431960"
+  },
+  {
+    "appid": 2868840,
+    "nombre": "Slay the Spire 2",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 11.99,
+    "precioOriginal": 11.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Indie",
+      "Estrategia",
+      "Acceso anticipado"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1787169309",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/fb0ad136e9eaa4297a1ab3440d88ecb7209f44a2/capsule_231x87.jpg?t=1787169309",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/1a373a95229aab0cfd97f553ecbe86092364bb9c/ss_1a373a95229aab0cfd97f553ecbe86092364bb9c.600x338.jpg?t=1787169309",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/f3af7cb9693b9c4b6a7555227db3fef943db3992/ss_f3af7cb9693b9c4b6a7555227db3fef943db3992.600x338.jpg?t=1787169309",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/c3db69efd984ef012ae85c5b426663720152f0a4/ss_c3db69efd984ef012ae85c5b426663720152f0a4.600x338.jpg?t=1787169309"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257289785/62628f64e43881b4262ff931831322cc7e691881/movie_600x337.jpg?t=1771531786",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/2868840/1627257579/a83072d3f9fb135618cc17b8390a50a19656a00d/1771464864/hls_264_master.m3u8?t=1771531786"
+    },
+    "tienda": "https://store.steampowered.com/app/2868840"
+  },
+  {
+    "appid": 322170,
+    "nombre": "Geometry Dash",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 2.99,
+    "precioOriginal": 2.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Indie"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1775300400",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/capsule_231x87.jpg?t=1775300400",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_05cb182b93131a5faf0516232a7ad27c83f2c0e8.600x338.jpg?t=1775300400",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_5aa7c52b6f29b138712c0e89c7f9f2791ec289a9.600x338.jpg?t=1775300400",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_267a8eff67ed643e4f1d49054da5102a07b7ffae.600x338.jpg?t=1775300400"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2036304/movie.293x165.jpg?t=1447366408",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/322170/29035/284ed61dccab2abafb237feefd9c67217532899a/1750507867/hls_264_master.m3u8?t=1447366408"
+    },
+    "tienda": "https://store.steampowered.com/app/322170"
+  },
+  {
+    "appid": 553850,
+    "nombre": "HELLDIVERS™ 2",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 39.99,
+    "precioOriginal": 39.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/1ce535d4e78dacd9c834b3966eef37a25fc7cffb/header_spanish.jpg?t=1793395133",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/2e7482da8bbdab84f8c3dae8a560a7f0c77643d7/capsule_231x87_spanish.jpg?t=1793395133",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/aed08979e15f54798f287dd8820fb5838476b5fa/ss_aed08979e15f54798f287dd8820fb5838476b5fa.600x338.jpg?t=1793395133",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/71ef7c65fcf63ff974ce42150190c0420c66c72b/ss_71ef7c65fcf63ff974ce42150190c0420c66c72b.600x338.jpg?t=1793395133",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/6c8b61a7c63479b6f526d285af6687a362d5d7ae/ss_6c8b61a7c63479b6f526d285af6687a362d5d7ae.600x338.jpg?t=1793395133"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257416388/40bb356adaabd25fd73488264840abe84ac84718/movie_600x337.jpg?t=1788431411",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/553850/97059895/43cbd15ee5e1bd1be5aef57dd4a093d448e2d7f5/1788431043/hls_264_master.m3u8?t=1788431411"
+    },
+    "tienda": "https://store.steampowered.com/app/553850"
+  },
+  {
+    "appid": 250900,
+    "nombre": "The Binding of Isaac: Rebirth",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 14.99,
+    "precioOriginal": 14.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/header.jpg?t=1731977365",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/capsule_231x87.jpg?t=1731977365",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/ss_25a4a446a433218d41a7e87e35b60c297e68e7a4.600x338.jpg?t=1731977365",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/ss_19ef624e8d97136ba6f928d389b85f7b8130c37a.600x338.jpg?t=1731977365",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/ss_9fa4199fa93cb8b1edd8780fa6ce9e80d2bfb503.600x338.jpg?t=1731977365"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2034156/movie.293x165.jpg?t=1447363402",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/250900/24525/9792b630ba0f19aae9c9a814b16b15b4e04ef2dc/1750497097/hls_264_master.m3u8?t=1447363402"
+    },
+    "tienda": "https://store.steampowered.com/app/250900"
+  },
+  {
+    "appid": 1973530,
+    "nombre": "Limbus Company",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Free to Play"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1793975559",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/capsule_231x87.jpg?t=1793975559",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/2a692ea70cc4226c1b8015c6d29baca30a3fb6b0/ss_2a692ea70cc4226c1b8015c6d29baca30a3fb6b0.600x338.jpg?t=1793975559",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/609232637733e0fe1a875a2583decfb438c03ddf/ss_609232637733e0fe1a875a2583decfb438c03ddf.600x338.jpg?t=1793975559",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/a805c5a206ab90a89eb24879997248394fbf2d02/ss_a805c5a206ab90a89eb24879997248394fbf2d02.600x338.jpg?t=1793975559"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257495136/20e9ba9b0a521bf1d3af1dd0b2ddaa7f97c135be/movie_600x337.jpg?t=1793975558",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1973530/1398621314/b866de96888a59d1debb7b5172221a351008981c/1793972864/hls_264_master.m3u8?t=1793975558"
+    },
+    "tienda": "https://store.steampowered.com/app/1973530"
+  },
+  {
+    "appid": 413150,
+    "nombre": "Stardew Valley",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 4.99,
+    "precioOriginal": 4.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Indie",
+      "Rol",
+      "Simuladores"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1786554168",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/capsule_231x87.jpg?t=1786554168",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.600x338.jpg?t=1786554168",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_9ac899fe2cda15d48b0549bba77ef8c4a090a71c.600x338.jpg?t=1786554168",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_4fa0866709ede3753fdf2745349b528d5e8c4054.600x338.jpg?t=1786554168"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256815967/movie.293x165.jpg?t=1754692862",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/413150/336433/0058de516bf7c46986ba1e81172ffd3c2ca6cad7/1750527541/hls_264_master.m3u8?t=1754692862"
+    },
+    "tienda": "https://store.steampowered.com/app/413150"
+  },
+  {
+    "appid": 1808500,
+    "nombre": "ARC Raiders",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 39.99,
+    "precioOriginal": 39.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/41ee6c5c81a5797132879892586465b917acc563/header_alt_assets_9.jpg?t=1794215815",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87.jpg?t=1794215815",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/1763664f3ea80080867eafa751685b7feec950c8/ss_1763664f3ea80080867eafa751685b7feec950c8.600x338.jpg?t=1794215815",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/5188aa2b07920afe9753409ea9fe3d1324cfc294/ss_5188aa2b07920afe9753409ea9fe3d1324cfc294.600x338.jpg?t=1794215815",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/155fc161a45949e61f41e473282f9ed7ec221efe/ss_155fc161a45949e61f41e473282f9ed7ec221efe.600x338.jpg?t=1794215815"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257230049/5e5ff0f6856abe9b4a8200dfae19d6ec5ff6e67d/movie_600x337.jpg?t=1764583045",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1808500/1688567022/8ecb330fb51867a492cf9436054ef4a9ed45a3af/1762957801/hls_264_master.m3u8?t=1764583045"
+    },
+    "tienda": "https://store.steampowered.com/app/1808500"
+  },
+  {
+    "appid": 440,
+    "nombre": "Team Fortress 2",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 0,
+    "precioOriginal": 0,
+    "descuento": 0,
+    "gratis": true,
+    "generos": [
+      "Acción",
+      "Free to Play"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/capsule_231x87.jpg?t=1757348372",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/ss_ea21f7bbf4f79bada4554df5108d04b6889d3453.600x338.jpg?t=1757348372",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/ss_e3aedb2ab36bba8cfe611b1e0eaa807e4bb2d742.600x338.jpg?t=1757348372",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/ss_ee24a769dc1d81dcbd7b250d16530394adee4264.600x338.jpg?t=1757348372"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256698790/movie.293x165.jpg?t=1682961253",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/440/129304/a9d97ffaf28cac468369400c12abe442a7b688b2/1749861261/hls_264_master.m3u8?t=1682961253"
+    },
+    "tienda": "https://store.steampowered.com/app/440"
+  },
+  {
+    "appid": 892970,
+    "nombre": "Valheim",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 13.49,
+    "precioOriginal": 14.99,
+    "descuento": 10,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Indie",
+      "Rol"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/df65cafab20dae97a243c7cc988e8bf959e4b906/header.jpg?t=1791544831",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/cc4520a33c5a7c4d9d8df5f48598c0817d781514/capsule_231x87.jpg?t=1791544831",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/5a31353178f635b67f0c8720ebb8a1a95b637276/ss_5a31353178f635b67f0c8720ebb8a1a95b637276.600x338.jpg?t=1791544831",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/bc7c361dab1780543a3ceca50c8fba831e5bc8db/ss_bc7c361dab1780543a3ceca50c8fba831e5bc8db.600x338.jpg?t=1791544831",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/ss_a600a7d4ca954543e22f571a9629521a13f82143.600x338.jpg?t=1791544831"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257420513/3f5dcfbddfe4cca65abe94a03a46b3b5546c46ab/movie_600x337.jpg?t=1788958575",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/892970/1773403435/2417a8f159c3b08912ee0c08e6a78d70452a083f/1788934690/hls_264_master.m3u8?t=1788958575"
+    },
+    "tienda": "https://store.steampowered.com/app/892970"
+  },
+  {
+    "appid": 2807960,
+    "nombre": "Battlefield™ 6",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 69.99,
+    "precioOriginal": 69.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1794335892",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/d7ae078e0a543a97ff5a5d72165999535b0b1cdc/capsule_231x87.jpg?t=1794335892",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/6ae49bd8763ec5317df15c795926bc4905b2d77a/ss_6ae49bd8763ec5317df15c795926bc4905b2d77a.600x338.jpg?t=1794335892",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/d7dcf95200c8d6ec5ce95c21984d683297881e54/ss_d7dcf95200c8d6ec5ce95c21984d683297881e54.600x338.jpg?t=1794335892",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/d69643ab5d17598bca263d19ac40ad244360541f/ss_d69643ab5d17598bca263d19ac40ad244360541f.600x338.jpg?t=1794335892"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257500770/6ef087c5618702114738bd16a13dbac0ea49cf99/movie_600x337.jpg?t=1794335890",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/2807960/15833556/e04e636ac7abb500db278ccaffdae6da8d3821a8/1794333051/hls_264_master.m3u8?t=1794335890"
+    },
+    "tienda": "https://store.steampowered.com/app/2807960"
+  },
+  {
+    "appid": 105600,
+    "nombre": "Terraria",
+    "origen": "popular",
+    "enCorpus": true,
+    "precio": 5.79,
+    "precioOriginal": 5.79,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Indie",
+      "Rol"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1792530636",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/capsule_231x87.jpg?t=1792530636",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_8c03886f214d2108cafca13845533eaa3d87d83f.600x338.jpg?t=1792530636",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_ae168a00ab08104ba266dc30232654d4b3c919e5.600x338.jpg?t=1792530636",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_9edd98caaf9357c2f40758f354475a56e356e8b0.600x338.jpg?t=1792530636"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257274214/3400c546ddc61c713c2a2da4df7032f0f264a2a4/movie_600x337.jpg?t=1769844434",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/105600/1114648825/03d62ed8c2a353ea17f36caf492d053746655032/1769541214/hls_264_master.m3u8?t=1769844434"
+    },
+    "tienda": "https://store.steampowered.com/app/105600"
+  },
+  {
+    "appid": 1669980,
+    "nombre": "Volcano Princess",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 3.24,
+    "precioOriginal": 4.99,
+    "descuento": 35,
+    "gratis": false,
+    "generos": [
+      "Casual",
+      "Indie",
+      "Rol",
+      "Simuladores",
+      "Estrategia"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1669980/header.jpg?t=1793357371",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1669980/capsule_231x87.jpg?t=1793357371",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1669980/ss_bc0ae18ad26e05d3a1c92b4143815c2492e970a0.600x338.jpg?t=1793357371",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1669980/ss_cafff5c9ec3a8970313e5123b20a8fc9d9de65e2.600x338.jpg?t=1793357371",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1669980/ss_2efe5dd103a6e055c836f0b95da3a868fade3409.600x338.jpg?t=1793357371"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256942173/fd7734a1391a87013aeb5c37123bd892f708ed64/movie_600x337.jpg?t=1741928189",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1669980/559591/376b3617488498f6018b27ca4b5a2aaa19f3d1c2/1750722064/hls_264_master.m3u8?t=1741928189"
+    },
+    "tienda": "https://store.steampowered.com/app/1669980"
+  },
+  {
+    "appid": 1288310,
+    "nombre": "Firework",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 9.99,
+    "precioOriginal": 9.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Indie"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1288310/header.jpg?t=1751067221",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1288310/capsule_231x87.jpg?t=1751067221",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1288310/ss_74643bb33e9cf380c7728f3cc0ceb4a6dac98eff.600x338.jpg?t=1751067221",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1288310/ss_2892982dd5d30194b86f996daccd556ed63cb881.600x338.jpg?t=1751067221",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1288310/ss_2de3fc62275fc8e6d2e648a1992e6013e02996d5.600x338.jpg?t=1751067221"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256853450/movie.293x165.jpg?t=1632974722",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1288310/404800/7d6e12029755c5b30ee0f0ab9e8c0e51d056eb2a/1751215437/hls_264_master.m3u8?t=1632974722"
+    },
+    "tienda": "https://store.steampowered.com/app/1288310"
+  },
+  {
+    "appid": 242760,
+    "nombre": "The Forest",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 10.49,
+    "precioOriginal": 10.49,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Indie",
+      "Simuladores"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/header.jpg?t=1699381053",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/capsule_231x87.jpg?t=1699381053",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/ss_8ccb821c4df3fafdf4161d77f38635441a8157f2.600x338.jpg?t=1699381053",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/ss_53c615d49c4777144ed7359e4bf7c9eb6838cc8e.600x338.jpg?t=1699381053",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/ss_772eebf0ce7bdb51546055a36185e8ee46e8acac.600x338.jpg?t=1699381053"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256715589/movie.293x165.jpg?t=1525039057",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/242760/160666/bbafdb4d869f0c66696af5542e6bd7470a214051/1750486422/hls_264_master.m3u8?t=1525039057"
+    },
+    "tienda": "https://store.steampowered.com/app/242760"
+  },
+  {
+    "appid": 346110,
+    "nombre": "ARK: Survival Evolved",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 14.99,
+    "precioOriginal": 14.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Indie",
+      "Multijugador masivo",
+      "Rol"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1793226330",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/capsule_231x87.jpg?t=1793226330",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/ss_2fd997a2f7151cb2187043a1f41589cc6a9ebf3a.600x338.jpg?t=1793226330",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/ss_01cbef83fe28d64ee5a3d39a86043fb1e49abd31.600x338.jpg?t=1793226330",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/ss_164a92a53f9bcbb728b391fc0719f9769c2e1249.600x338.jpg?t=1793226330"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256836250/movie.293x165.jpg?t=1622089232",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/346110/372586/b23204cd58f68c42a07248e8472b9296c1c875c5/1750513376/hls_264_master.m3u8?t=1622089232"
+    },
+    "tienda": "https://store.steampowered.com/app/346110"
+  },
+  {
+    "appid": 1876890,
+    "nombre": "Wandering Sword",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 24.99,
+    "precioOriginal": 24.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Aventura",
+      "Indie",
+      "Rol",
+      "Estrategia"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876890/44686407cf63ce1c05c9fe3bd07e0df55307bd01/header.jpg?t=1774667199",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876890/4f5d5bee89f19e1b895faf0efd72c2076897d721/capsule_231x87.jpg?t=1774667199",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876890/ss_77761e6f8ed0036ec60088a6cf980228e1b36f78.600x338.jpg?t=1774667199",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876890/ss_b80857eaa572f17c0137005b4a8112408844df72.600x338.jpg?t=1774667199",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1876890/ss_9b51bf66f9b78ae7cb9e1ba65fd5f788220a465c.600x338.jpg?t=1774667199"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257158229/0f4318f0209f60a56a578eb35b2f03ebb033f0b7/movie_600x337.jpg?t=1750300940",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1876890/1775792474/500e9ed0ee97402a5a39e918f8890cc8c1e5ca0b/1750739463/hls_264_master.m3u8?t=1750300940"
+    },
+    "tienda": "https://store.steampowered.com/app/1876890"
+  },
+  {
+    "appid": 739630,
+    "nombre": "Phasmophobia",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 9.49,
+    "precioOriginal": 9.49,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Indie",
+      "Acceso anticipado"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/c227a2855aba60f3657bc0c3a46515b8c41fb2b6/header.jpg?t=1794312564",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/0268c77668d5643d3f2c19e67e92e252fdfe6c7f/capsule_231x87.jpg?t=1794312564",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ec30a770064ea10c2bcfb1b3002a3dbd086be516/ss_ec30a770064ea10c2bcfb1b3002a3dbd086be516.600x338.jpg?t=1794312564",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/e9b67c7a3744a36cd5cc29adc13c6caaa4172e26/ss_e9b67c7a3744a36cd5cc29adc13c6caaa4172e26.600x338.jpg?t=1794312564",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/1ec54d1d45005e5ddd8360b05e5bbdea3a9090f2/ss_1ec54d1d45005e5ddd8360b05e5bbdea3a9090f2.600x338.jpg?t=1794312564"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257381662/d2c6bdf4f9ef5d20a9f17a67da33c2aaf871d0ab/movie_600x337.jpg?t=1784637252",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/739630/1110188961/d019d6795771dfe079d656ff9d286eb8eddd59e4/1784635068/hls_264_master.m3u8?t=1784637252"
+    },
+    "tienda": "https://store.steampowered.com/app/739630"
+  },
+  {
+    "appid": 992300,
+    "nombre": "嗜血印 Bloody Spell",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 24.99,
+    "precioOriginal": 24.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Indie",
+      "Rol"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/992300/header.jpg?t=1793587797",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/992300/capsule_231x87.jpg?t=1793587797",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/992300/ss_089bc6322dbc05794b3ac224d799e304cd477469.600x338.jpg?t=1793587797",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/992300/ss_003a92b0c3c6adba9db4a6995df604dd3aa0d271.600x338.jpg?t=1793587797",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/992300/ss_26b6017564d5ec5452bd450c8f3c27a0b97da74f.600x338.jpg?t=1793587797"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256897204/movie.293x165.jpg?t=1715645472",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/992300/481158/9fc2be5271e938b69984fe061c03fa6cd81a99a4/1750604731/hls_264_master.m3u8?t=1715645472"
+    },
+    "tienda": "https://store.steampowered.com/app/992300"
+  },
+  {
+    "appid": 1144400,
+    "nombre": "Senren＊Banka",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 34.99,
+    "precioOriginal": 34.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Aventura",
+      "Casual"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144400/header.jpg?t=1752128014",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144400/capsule_231x87.jpg?t=1752128014",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144400/ss_779bedfa386c15ac6eeb89e843cf32d056d55033.600x338.jpg?t=1752128014",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144400/ss_cb283a81bc0050f758f1c6674b8d2067b9da06ed.600x338.jpg?t=1752128014",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144400/ss_e361b3b4a0c9c83a0c876c8b86c6d7e67f272d07.600x338.jpg?t=1752128014"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256772186/movie.293x165.jpg?t=1581675399",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1144400/261423/776f7d7891866dc9aec6ac822e6f85e0071b1270/1750627410/hls_264_master.m3u8?t=1581675399"
+    },
+    "tienda": "https://store.steampowered.com/app/1144400"
+  },
+  {
+    "appid": 942970,
+    "nombre": "Unheard",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 3.99,
+    "precioOriginal": 3.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Indie",
+      "Rol",
+      "Simuladores"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/942970/header.jpg?t=1728551840",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/942970/capsule_231x87.jpg?t=1728551840",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/942970/ss_9c4721d6775f0d3fb4cbe12e3c634cbaa2b27ba8.600x338.jpg?t=1728551840",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/942970/ss_90ec627a453e47c3350efe6ef82a33e3e1ce6def.600x338.jpg?t=1728551840",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/942970/ss_d5101b9b336ba94633b134504012b9e1a94fd39e.600x338.jpg?t=1728551840"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256737939/movie.293x165.jpg?t=1579590444",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/942970/200113/cb5371af41a1a4035eb36dbe0d2f3fe132ebf60d/1750599169/hls_264_master.m3u8?t=1579590444"
+    },
+    "tienda": "https://store.steampowered.com/app/942970"
+  },
+  {
+    "appid": 1421250,
+    "nombre": "Tiny Bunny",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 6.29,
+    "precioOriginal": 6.29,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Aventura",
+      "Indie"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1421250/3b804ec79dab6d824c3000470ca067f0a75d4f86/header.jpg?t=1789917370",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1421250/capsule_231x87.jpg?t=1789917370",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1421250/ss_6c6efb45d5fd23f174d39805f38c2b7b8c0e736d.600x338.jpg?t=1789917370",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1421250/ss_63043626aab2b79d39deb0a4340303dae148532b.600x338.jpg?t=1789917370",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1421250/ss_b3b21c52aba14158956650196a0998fac81c7d11.600x338.jpg?t=1789917370"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257055147/9a70bf1d2d1748906830f42db024960fb08852f1/movie_600x337.jpg?t=1764794649",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1421250/755844/47a54adefa30f31b306500e99671f399715e2e9a/1751235851/hls_264_master.m3u8?t=1764794649"
+    },
+    "tienda": "https://store.steampowered.com/app/1421250"
+  },
+  {
+    "appid": 1189490,
+    "nombre": "觅长生",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 12.74,
+    "precioOriginal": 14.99,
+    "descuento": 15,
+    "gratis": false,
+    "generos": [
+      "Indie",
+      "Rol",
+      "Estrategia"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1189490/header.jpg?t=1739615973",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1189490/capsule_231x87.jpg?t=1739615973",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1189490/ss_71d033954d9c3897a6adba232296aee62faada49.600x338.jpg?t=1739615973",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1189490/ss_90fffdf6d061d7d138c666df3f56a5e79589e718.600x338.jpg?t=1739615973",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1189490/ss_a4134050ae3b1f7a43cf1f5b98c22f8d3d1f9ac9.600x338.jpg?t=1739615973"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256924704/movie.293x165.jpg?t=1673430350",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1189490/528589/e9e1f3e9848a4fbb224048fd2df270caf9ffed31/1751201135/hls_264_master.m3u8?t=1673430350"
+    },
+    "tienda": "https://store.steampowered.com/app/1189490"
+  },
+  {
+    "appid": 3241660,
+    "nombre": "R.E.P.O.",
+    "origen": "oferta",
+    "enCorpus": true,
+    "precio": 4.99,
+    "precioOriginal": 4.99,
+    "descuento": 0,
+    "gratis": false,
+    "generos": [
+      "Acción",
+      "Acceso anticipado"
+    ],
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/62177765c05399116f0453fe1177b00ceed698c4/header_alt_assets_3.jpg?t=1793278962",
+    "capsula": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/be0c8d662bb4c8749736fd8fe336bc5d27bb3618/capsule_231x87_alt_assets_3.jpg?t=1793278962",
+    "capturas": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_e6babaab52581f81df91e50768cee6a9334ef6ec.600x338.jpg?t=1793278962",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_af7d8d6302d543d89019bad49ea853a970bb82de.600x338.jpg?t=1793278962",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_a66715d57329c456d91aeb11fbd406e7d8c5dbc7.600x338.jpg?t=1793278962"
+    ],
+    "trailer": {
+      "miniatura": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257482520/dc5b62a0a70918fdd661c8d948f2858378abd5cf/movie_600x337.jpg?t=1793278961",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/3241660/524147145/e327ae080f1f4d19bac40fccf79b876ae3ba29a2/1793192328/hls_264_master.m3u8?t=1793278961"
+    },
+    "tienda": "https://store.steampowered.com/app/3241660"
+  }
+]
