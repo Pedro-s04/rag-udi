@@ -1,11 +1,12 @@
 // Interfaz de chat para exponer en clase: el mismo RAG de preguntar.mjs,
 // pero cada etapa se devuelve por separado para mostrarla paso a paso.
-//   node --env-file=.env chat.mjs   ->   http://localhost:3000
-import { createServer } from "node:http";
+//   npm run build   (compila la web de web/)
+//   npm run chat    ->   http://localhost:PUERTO
 import { readFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
 import { embedding, responder } from "./api.mjs";
 import { buscar } from "./buscar.mjs";
+import { crearServidor } from "./servidor.mjs";
 
 const PUERTO = Number(process.env.PUERTO ?? 3000);
 // Los prompts se leen en cada pregunta: si los editás, el cambio vale sin reiniciar.
@@ -73,6 +74,7 @@ async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
     resultados: resultados.map(r => ({
       seccion: r.seccion?.replace(/^#+\s*/, "") ?? `fragmento ${r.posicion}`,
       fuente: r.fuente,
+      appid: r.appid,
       similitud: r.similitud,
       precio: r.precio,
       descuento: r.descuento,
@@ -104,48 +106,9 @@ function mensajeDeError(e) {
   return e.message;
 }
 
-const numeroOpcional = v => (v === "" || v == null ? undefined : Number(v));
+const leerJuegos = async () => JSON.parse(await readFile("datos/destacados.json", "utf8").catch(() => "[]"));
 
-async function leerJSON(req) {
-  let cuerpo = "";
-  for await (const pedazo of req) cuerpo += pedazo;
-  return JSON.parse(cuerpo || "{}");
-}
-
-function enviar(res, estado, tipo, cuerpo) {
-  res.writeHead(estado, { "Content-Type": tipo });
-  res.end(cuerpo);
-}
-
-const servidor = createServer(async (req, res) => {
-  try {
-    if (req.method === "GET" && req.url === "/") {
-      return enviar(res, 200, "text/html; charset=utf-8", await readFile("chat.html"));
-    }
-    // Solo JSON: un formulario o un script de otra página no puede mandarlo sin permiso
-    // del navegador (CORS), así que otra pestaña no puede usar el chat a tus espaldas.
-    if (req.method === "POST" && !req.headers["content-type"]?.startsWith("application/json")) {
-      return enviar(res, 415, "application/json", JSON.stringify({ error: "Solo acepto JSON" }));
-    }
-    if (req.method === "POST" && req.url === "/api/buscar") {
-      const { pregunta, descuentoMin, precioMax } = await leerJSON(req);
-      if (!pregunta?.trim()) return enviar(res, 400, "application/json", JSON.stringify({ error: "La pregunta está vacía" }));
-      const datos = await buscarPasos({
-        pregunta: pregunta.trim(),
-        descuentoMin: numeroOpcional(descuentoMin),
-        precioMax: numeroOpcional(precioMax),
-      });
-      return enviar(res, 200, "application/json", JSON.stringify(datos));
-    }
-    if (req.method === "POST" && req.url === "/api/responder") {
-      return enviar(res, 200, "application/json", JSON.stringify(await responderPaso(await leerJSON(req))));
-    }
-    enviar(res, 404, "text/plain; charset=utf-8", "No existe");
-  } catch (e) {
-    console.error(e);
-    enviar(res, 500, "application/json", JSON.stringify({ error: mensajeDeError(e) }));
-  }
-});
+const servidor = crearServidor({ buscarPasos, responderPaso, mensajeDeError, dirWeb: "web/dist", leerJuegos });
 
 servidor.on("error", e => {
   if (e.code === "EADDRINUSE") {

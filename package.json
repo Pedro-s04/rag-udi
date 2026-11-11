@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "chat": "node --env-file=.env chat.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm --prefix web run build",
+    "dev": "npm --prefix web run dev",
+    "test": "node --test \"test/**/*.test.mjs\""
   },
   "repository": {
     "type": "git",
