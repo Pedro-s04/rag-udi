@@ -237,3 +237,20 @@ body { background: #05070b; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Animaciones de Pixel y de la página (del diseño) */
+@keyframes pixel-respira { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-4px) } }
+@keyframes pixel-escanea { 0%,100% { transform: translateX(-34px) } 50% { transform: translateX(34px) } }
+@keyframes pixel-tipea { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+@keyframes pixel-parpadeo { 0%,90%,100% { transform: scaleY(1) } 94% { transform: scaleY(.1) } }
+@keyframes pixel-pulso { 0%,100% { opacity: .55; transform: scale(.9) } 50% { opacity: 1; transform: scale(1.15) } }
+@keyframes puntos { 0%,100% { opacity: .25 } 50% { opacity: 1 } }
+@keyframes emerge { from { opacity: 0; transform: scale(1.08); filter: blur(10px) } to { opacity: 1; transform: none; filter: none } }
+@keyframes entra { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+.pixel-parpadeo { animation: pixel-parpadeo 4.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center }
+.pixel-pulso { animation: pixel-pulso 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center }
+.punto { animation: puntos 1.2s ease-in-out infinite }
+.punto:nth-child(2) { animation-delay: .2s }
+.punto:nth-child(3) { animation-delay: .4s }
+.emerge { animation: emerge .8s ease-out both }
+.entra { animation: entra .45s ease-out both }

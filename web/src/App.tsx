@@ -1,11 +1,18 @@
-import { RetroGrid } from '@/components/ui/retro-grid'
-import { ShimmerButton } from '@/components/ui/shimmer-button'
+import { useState } from 'react'
+import { Hero } from '@/components/Hero'
+import { Navbar } from '@/components/Navbar'
+import { ChatProvider } from '@/lib/ChatProvider'
 
 export default function App() {
+  const [, setAdentro] = useState(false)
   return (
-    <main className="relative grid min-h-screen place-items-center overflow-hidden bg-fondo">
-      <RetroGrid />
-      <ShimmerButton className="font-titulo">Ver detrás de escena</ShimmerButton>
-    </main>
+    <ChatProvider>
+      <div className="relative min-h-screen overflow-x-clip bg-fondo font-sans text-texto">
+        <Navbar onDetras={() => setAdentro(true)} />
+        <main>
+          <Hero />
+        </main>
+      </div>
+    </ChatProvider>
   )
 }
