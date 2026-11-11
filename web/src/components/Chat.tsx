@@ -62,8 +62,8 @@ export function Chat({ variante }: { variante: 'hero' | 'adentro' }) {
       variante === 'hero' ? 'h-[560px] max-h-[calc(100vh-120px)] min-h-[440px]' : 'h-full'}`}>
       <div className="flex items-center gap-2 border-b border-[#1c2c3e] px-4 py-2.5">
         <span className="size-3 rounded-full bg-[#ff5f57]" /><span className="size-3 rounded-full bg-[#febc2e]" /><span className="size-3 rounded-full bg-[#28c840]" />
-        <span className="ml-2.5 font-mono text-xs text-gris">~/ofertas-rag › chat con Pixel</span>
-        <span className={`ml-auto font-mono text-xs ${pensando ? 'text-verde' : 'text-gris'}`}>
+        <span className="ml-2.5 truncate font-mono text-xs text-gris">{variante === 'hero' ? '~/ofertas-rag › chat con Pixel' : 'chat con Pixel'}</span>
+        <span className={`ml-auto shrink-0 font-mono text-xs ${pensando ? 'text-verde' : 'text-gris'}`}>
           ● {estado.fase === 'buscando' ? 'buscando ofertas…' : estado.fase === 'respondiendo' ? 'escribiendo…' : 'en línea'}
         </span>
       </div>

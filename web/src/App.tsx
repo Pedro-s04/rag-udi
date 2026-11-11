@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import { ComoPiensa } from '@/components/ComoPiensa'
 import { Destacados } from '@/components/Destacados'
+import { DetrasDeEscena } from '@/components/DetrasDeEscena'
 import { Hero } from '@/components/Hero'
 import { Navbar } from '@/components/Navbar'
 import { SeccionPC } from '@/components/SeccionPC'
 import { ChatProvider } from '@/lib/ChatProvider'
 
 export default function App() {
-  const [, setAdentro] = useState(false)
+  const [adentro, setAdentro] = useState(false)
   const entrar = () => setAdentro(true)
   return (
     <ChatProvider>
@@ -23,6 +24,7 @@ export default function App() {
           Proyecto independiente, sin afiliación con Valve. Precios y datos de Steam. · ollama · pgvector · gemini
         </footer>
       </div>
+      {adentro && <DetrasDeEscena onSalir={() => setAdentro(false)} />}
     </ChatProvider>
   )
 }

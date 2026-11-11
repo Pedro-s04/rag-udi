@@ -6,9 +6,10 @@ import { Spotlight } from '@/components/ui/spotlight-new'
 import { Escritorio } from '@/escena/Escritorio'
 import { Lienzo } from '@/escena/Lienzo'
 import { soportaWebGL } from '@/escena/soportaWebGL'
+import { CAMARA_FRENTE, MIRA_FRENTE } from '@/lib/entrada'
 
-const FRENTE = new THREE.Vector3(0.3, 1.25, 3.9)
-const MIRA = new THREE.Vector3(0.3, 0.55, 0)
+const FRENTE = new THREE.Vector3(...CAMARA_FRENTE)
+const MIRA = new THREE.Vector3(...MIRA_FRENTE)
 
 // De frente al escritorio; el mouse mueve un poco la cámara ("mirar alrededor").
 function CamaraFrente() {
