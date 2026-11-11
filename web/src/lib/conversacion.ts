@@ -67,7 +67,8 @@ export async function orquestar(pregunta: string, filtros: Filtros, dispatch: (a
     dispatch({ tipo: 'pasos', pasos })
     if (!pasos.idPrompt) return dispatch({ tipo: 'respuesta', texto: NO_LO_ENCUENTRO, ms: 0 })
     const { respuesta, ms } = await api.responder(pasos.idPrompt)
-    dispatch({ tipo: 'respuesta', texto: respuesta, ms })
+    // un modelo puede devolver null (una negativa, por ejemplo): no se rompe la página
+    dispatch({ tipo: 'respuesta', texto: respuesta || NO_LO_ENCUENTRO, ms })
   } catch (e) {
     dispatch({ tipo: 'error', mensaje: e instanceof Error ? e.message : String(e) })
   }

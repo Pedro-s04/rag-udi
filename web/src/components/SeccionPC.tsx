@@ -5,7 +5,8 @@ import { ShimmerButton } from '@/components/ui/shimmer-button'
 import { Spotlight } from '@/components/ui/spotlight-new'
 import { Escritorio } from '@/escena/Escritorio'
 import { Lienzo } from '@/escena/Lienzo'
-import { soportaWebGL } from '@/escena/soportaWebGL'
+import { LimiteEscena } from '@/escena/LimiteEscena'
+import { hayWebGL } from '@/escena/soportaWebGL'
 import { CAMARA_FRENTE, MIRA_FRENTE } from '@/lib/entrada'
 
 const FRENTE = new THREE.Vector3(...CAMARA_FRENTE)
@@ -30,7 +31,8 @@ function CamaraFrente() {
 
 export function SeccionPC({ onEntrar }: { onEntrar: () => void }) {
   const desarme = useRef(0)
-  const con3D = soportaWebGL()
+  const con3D = hayWebGL()
+  const respaldo = <img src="/pc-respaldo.jpg" alt="El escritorio gamer con la PC de Pixel" className="size-full object-cover" />
   return (
     <section id="detras" className="relative scroll-mt-24 overflow-hidden px-4 py-20">
       <Spotlight />
@@ -49,13 +51,13 @@ export function SeccionPC({ onEntrar }: { onEntrar: () => void }) {
         </div>
         <div className="relative mt-8 aspect-video w-full overflow-hidden rounded-2xl border border-borde bg-[#06080c] shadow-[0_30px_80px_rgba(0,0,0,.6)]">
           {con3D ? (
-            <Lienzo etiqueta="Escritorio gamer en 3D con la PC de Pixel">
-              <CamaraFrente />
-              <Escritorio desarme={desarme} />
-            </Lienzo>
-          ) : (
-            <img src="/pc-respaldo.jpg" alt="El escritorio gamer con la PC de Pixel" className="size-full object-cover" />
-          )}
+            <LimiteEscena respaldo={respaldo}>
+              <Lienzo etiqueta="Escritorio gamer en 3D con la PC de Pixel">
+                <CamaraFrente />
+                <Escritorio desarme={desarme} />
+              </Lienzo>
+            </LimiteEscena>
+          ) : respaldo}
           <button type="button" onClick={onEntrar} aria-label="Entrar a la PC de Pixel"
             className="absolute inset-0 cursor-pointer bg-transparent" />
           <span className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/60 px-3 py-1 font-mono text-xs text-gris">

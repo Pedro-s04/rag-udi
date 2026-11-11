@@ -4,7 +4,8 @@ import * as THREE from 'three'
 import { Circuito } from '@/escena/Circuito'
 import { Escritorio } from '@/escena/Escritorio'
 import { Lienzo } from '@/escena/Lienzo'
-import { soportaWebGL } from '@/escena/soportaWebGL'
+import { LimiteEscena } from '@/escena/LimiteEscena'
+import { hayWebGL } from '@/escena/soportaWebGL'
 import { useChat } from '@/lib/ChatProvider'
 import { etapaActiva, type Etapa } from '@/lib/conversacion'
 import { momentoEntrada } from '@/lib/entrada'
@@ -50,7 +51,7 @@ function useEtapaVisual(): Etapa | null {
 }
 
 export function DetrasDeEscena({ onSalir }: { onSalir: () => void }) {
-  const con3D = soportaWebGL()
+  const con3D = hayWebGL()
   const directo = !con3D || sinMovimiento()
   const [fase, setFase] = useState<Fase>(directo ? 'adentro' : 'entrando')
   const desarme = useRef(0)
@@ -71,11 +72,14 @@ export function DetrasDeEscena({ onSalir }: { onSalir: () => void }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  const fondo = <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(26,115,232,.25),transparent_70%)]" />
+
   return (
     <div role="dialog" aria-modal="true" aria-label="Dentro de la PC de Pixel"
       className={`fixed inset-0 z-50 bg-fondo transition-opacity duration-[400ms] ${fase === 'saliendo' ? 'opacity-0' : 'opacity-100'}`}>
       {con3D ? (
         <div className="absolute inset-0">
+          <LimiteEscena respaldo={fondo} onFallo={() => setFase(f => (f === 'entrando' ? 'adentro' : f))}>
           <Lienzo etiqueta="Interior de la PC de Pixel: la placa madre con la CPU, el SSD y la GPU">
             <Recorrido desarme={desarme} circuito={circuito} saltar={directo} onListo={() => setFase(f => (f === 'entrando' ? 'adentro' : f))} />
             <Escritorio desarme={desarme} />
@@ -83,10 +87,9 @@ export function DetrasDeEscena({ onSalir }: { onSalir: () => void }) {
               <Circuito etapa={etapa} opacidad={circuito} />
             </group>
           </Lienzo>
+          </LimiteEscena>
         </div>
-      ) : (
-        <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(26,115,232,.25),transparent_70%)]" />
-      )}
+      ) : fondo}
 
       {fase === 'entrando' && (
         <p className="pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 font-titulo text-lg tracking-[.2em] text-celeste">

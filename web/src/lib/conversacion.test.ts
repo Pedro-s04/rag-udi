@@ -73,6 +73,12 @@ describe('orquestar', () => {
     expect(acciones.at(-1)).toEqual({ tipo: 'respuesta', texto: 'ok', ms: 5 })
   })
 
+  test('si el modelo devuelve una respuesta vacía no rompe: contesta "No lo encuentro"', async () => {
+    const responder = vi.fn(async () => ({ respuesta: null as unknown as string, ms: 5 }))
+    const acciones = await correr({ buscar: async () => pasos('id-1'), responder })
+    expect(acciones.at(-1)).toEqual({ tipo: 'respuesta', texto: 'No lo encuentro en los documentos.', ms: 5 })
+  })
+
   test('si buscar falla despacha error', async () => {
     const acciones = await correr({ buscar: async () => { throw new Error('se cayó') }, responder: vi.fn() })
     expect(acciones.at(-1)).toEqual({ tipo: 'error', mensaje: 'se cayó' })
