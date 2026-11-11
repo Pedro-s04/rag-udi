@@ -53,9 +53,10 @@ De arriba hacia abajo:
    chat funcional en el centro: mensajes, campo de texto y filtros opcionales de
    precio máximo (USD) y descuento mínimo (%). Las ideas rápidas del diseño ("Elegí
    un modo de juego") quedan como sugerencias que cargan una pregunta.
-3. **Ofertas reales de Steam**: grilla o carrusel con los juegos del corpus: portada
-   real, precio anterior tachado, precio con descuento y porcentaje. Al pasar el
-   mouse se reproduce el tráiler real del juego.
+3. **Juegos destacados de Steam**: grilla o carrusel con una selección de unos 30 a
+   40 juegos importantes y conocidos (ver "Selección de juegos destacados"): portada
+   real, precio actual y, si están en oferta, precio anterior tachado y porcentaje.
+   Al pasar el mouse se reproduce el tráiler real del juego.
 4. **La PC de Pixel (abajo de todo)**: escena 3D del escritorio vista de frente,
    con el botón **"Ver detrás de escena"**.
 
@@ -104,17 +105,20 @@ Decididas por Claude (el usuario puede corregirlas):
   con pantalla animada en canvas, gabinete con vidrio) y se agrega el circuito
   interior.
 - **Backend**: `chat.mjs` sigue siendo el servidor. Sirve el build de `web/dist` en
-  lugar de `chat.html` y suma un endpoint `GET /api/juegos` con los juegos y sus
-  medios. En desarrollo, Vite hace de proxy de `/api` hacia el puerto de `chat.mjs`
+  lugar de `chat.html` y suma un endpoint `GET /api/juegos` que devuelve
+  `datos/destacados.json`. En desarrollo, Vite hace de proxy de `/api` hacia el puerto de `chat.mjs`
   (`PUERTO`, hoy 3050). `chat.html` se puede borrar al final.
 - **`/api/buscar` agrega el `appid`** de cada resultado, para poder mostrar la
   portada del juego en el chat y en el paso a paso.
-- **Medios reales de Steam**: un script nuevo, `bajar-media.mjs`, recorre
-  `datos/juegos.json` y `datos/populares.json`, pide `appdetails` a Steam (respetando
-  la espera de `steam.mjs`) y guarda en `datos/media.json`, por appid:
-  `header_image`, `capsule_image`, 2 o 3 capturas y el primer tráiler (miniatura y
-  URL `hls_h264`). Los tráilers de Steam vienen en HLS/DASH, no en mp4, así que el
-  reproductor usa **hls.js** (Safari lo reproduce nativo).
+- **Medios reales de Steam**: un script nuevo, `bajar-destacados.mjs`, arma la
+  selección de destacados (ver abajo), pide `appdetails` a Steam para cada uno
+  (respetando la espera de `steam.mjs`) y guarda `datos/destacados.json`: nombre,
+  appid, precio, precio original, descuento, géneros, `header_image`,
+  `capsule_image`, 2 o 3 capturas y el primer tráiler (miniatura y URL `hls_h264`),
+  más una marca `enCorpus` que dice si el juego está en el corpus del RAG. Los
+  tráilers de Steam vienen en HLS/DASH, no en mp4, así que el reproductor usa
+  **hls.js** (Safari lo reproduce nativo). Solo se bajan los destacados, no los 379
+  juegos del corpus.
 - **Componentes previstos** (equivalencias con el diseño): Retro Grid y Meteors
   (fondo del hero), Animated Gradient Text (título), Typing Animation (línea de
   consola), Border Beam / Shine Border (marco del chat), Shimmer Button (botones
@@ -127,13 +131,30 @@ Decididas por Claude (el usuario puede corregirlas):
 - **Responsive**: se tiene que ver bien en una notebook con proyector (1280×720 o
   más). En celular el chat tiene que funcionar; la escena 3D puede simplificarse.
 
+## Selección de juegos destacados (decidido con el usuario)
+
+- El usuario quiere solo juegos importantes, conocidos o lanzamientos recientes, no
+  todo Steam.
+- Fuentes: **los más vendidos de Steam** (`/api/featuredcategories`, `top_sellers`,
+  sin hardware como Steam Deck ni DLC), que es donde aparecen los lanzamientos
+  importantes (en noviembre de 2026: Call of Duty: Modern Warfare 4, Football
+  Manager 27, Phantom Blade Zero…); **los más jugados** (`datos/populares.json`); y
+  **las ofertas más conocidas** del corpus (por cantidad de reseñas).
+- **Pueden aparecer juegos que no están en el corpus** del RAG: el usuario lo aceptó.
+  No se vuelve a indexar. Si alguien pregunta por ellos, Pixel puede contestar "No lo
+  encuentro en los documentos". La tarjeta puede indicar si el juego está o no en el
+  catálogo de Pixel (lo decide el builder).
+- Todos los datos salen de Steam: no se inventan juegos. **GTA 6 no está en Steam**
+  (salió solo para consolas), así que no se puede mostrar con datos reales; si
+  aparece en Steam más adelante, entra solo por la lista de más vendidos.
+
 ## Detalles resueltos por Claude
 
 - **Scripts**: `npm run build` (compila `web/`) y `npm run chat` (servidor). Si falta
   `web/dist`, `chat.mjs` avisa que hay que correr `npm run build`. `npm run dev`
   levanta Vite con proxy, para desarrollo.
 - **Pixel**: se reutiliza el SVG del robot de `rag-diseño/Main.dc.html` como componente.
-- **`datos/media.json` se commitea**, igual que `datos/juegos.json`.
+- **`datos/destacados.json` se commitea**, igual que `datos/juegos.json`.
 - **`rag-diseño/` no se commitea** salvo que el usuario lo pida: es su export de
   referencia.
 
