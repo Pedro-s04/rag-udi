@@ -13,6 +13,9 @@ const PUERTO = Number(process.env.PUERTO ?? 3000);
 // Los prompts se leen en cada pregunta: si los editás, el cambio vale sin reiniciar.
 const leerPrompt = archivo => readFile(archivo, "utf8");
 const UMBRAL = Number(process.env.UMBRAL ?? 0);
+// Cuántos fragmentos se traen. La guía usa 3, pero la reescritura de Gemini varía un poco cada
+// vez y a veces deja los mejores juegos 4.º o 5.º: con 5, el modelo tiene de dónde elegir.
+const K = 5;
 
 // Los prompts armados quedan acá, en el servidor, bajo un id al azar: la página solo
 // devuelve el id. Así nadie puede usar /api/responder para mandarle a Gemini lo que quiera
@@ -41,7 +44,7 @@ async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
 
   const filtros = { descuentoMin, precioMax };
   t = performance.now();
-  const resultados = await buscar(vector, 3, filtros);
+  const resultados = await buscar(vector, K, filtros);
   const msBusqueda = performance.now() - t;
 
   const utiles = resultados.filter(r => r.similitud >= UMBRAL);

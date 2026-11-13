@@ -10,6 +10,11 @@ const ESTAN = [
   "¿Cuánto cuesta Stardew Valley?",                // populares · Stardew Valley: USD 4.99, sin oferta
   "busco algo de tiros con muchas armas para jugar con amigos que esté casi regalado",  // Borderlands 2
   "quiero un juego de manejar camiones",           // Euro Truck Simulator 2 / American Truck Simulator
+  // las sugerencias de la web (web/src/components/Chat.tsx): son las que más se van a usar
+  "¿Qué juego de terror multijugador me recomendás?",   // Dead by Daylight, R.E.P.O.
+  "Busco un juego de carreras arcade barato",           // WRC 8, Assetto Corsa
+  "Quiero un RPG de fantasía con buena historia",       // ELDEN RING
+  "Algo de exploración espacial relajado",              // Astrometica
 ];
 
 // Preguntas cuya respuesta NO está: dos del tema (juegos que no aparecen en el corpus)

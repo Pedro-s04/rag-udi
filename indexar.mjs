@@ -3,7 +3,7 @@ import { trocear, trocearPorMarca } from "./trocear.mjs";
 import { embeddingsEnLote, pedidos } from "./api.mjs";
 import { agrupar } from "./lotes.mjs";
 import { db, comoVector } from "./db.mjs";
-import { MARCA } from "./marca.mjs";
+import { MARCA, MAXIMO } from "./marca.mjs";
 
 const TAMANO_LOTE = 32;   // Ollama no tiene el tope de 100 de Google, pero corre en tu compu
 await db.query("TRUNCATE fragmentos RESTART IDENTITY");   // arranca de cero: sin duplicados
@@ -22,7 +22,7 @@ console.time("tiempo total");
 let total = 0;
 for (const archivo of archivos) {
   const texto = await readFile(`corpus/${archivo}`, "utf8");
-  const fragmentos = MARCA ? trocearPorMarca(texto, MARCA) : trocear(texto, 1000, 150);
+  const fragmentos = MARCA ? trocearPorMarca(texto, MARCA, MAXIMO) : trocear(texto, 1000, 150);
   const lotes = agrupar(fragmentos, TAMANO_LOTE);
   console.log(`${archivo}: ${fragmentos.length} fragmentos en ${lotes.length} lote(s)`);
 

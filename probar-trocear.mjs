@@ -1,10 +1,10 @@
 import { readFile, readdir } from "node:fs/promises";
 import { trocear, trocearPorMarca } from "./trocear.mjs";
-import { MARCA } from "./marca.mjs";
+import { MARCA, MAXIMO } from "./marca.mjs";
 
 for (const archivo of (await readdir("corpus")).filter(a => /\.(txt|md)$/i.test(a))) {
   const texto = await readFile(`corpus/${archivo}`, "utf8");
-  const fragmentos = MARCA ? trocearPorMarca(texto, MARCA) : trocear(texto, 1000, 150);
+  const fragmentos = MARCA ? trocearPorMarca(texto, MARCA, MAXIMO) : trocear(texto, 1000, 150);
   const largos = fragmentos.map(f => f.texto.length);
   const conSeccion = fragmentos.filter(f => f.seccion).length;
 
