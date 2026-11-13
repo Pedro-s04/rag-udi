@@ -10,7 +10,9 @@ CREATE TABLE fragmentos (
   fuente    TEXT NOT NULL,           -- de qué archivo salió
   seccion   TEXT,                    -- qué parte del archivo (puede quedar vacía)
   posicion  INTEGER NOT NULL,        -- qué número de fragmento es dentro del archivo
-  texto     TEXT NOT NULL,           -- el fragmento en sí
+  texto     TEXT NOT NULL,           -- el fragmento en sí: lo que lee Gemini para responder
+  texto_busqueda TEXT NOT NULL,      -- lo que se convirtió en vector (texto-busqueda.mjs):
+                                     -- nombre + géneros + descripción corta, sin lo repetido
   embedding VECTOR(1024) NOT NULL,   -- bge-m3 devuelve 1024 números
 
   -- Extensión Steam (no está en la guía): los números de la oferta, como columnas,

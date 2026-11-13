@@ -4,6 +4,7 @@ import { embeddingsEnLote, pedidos } from "./api.mjs";
 import { agrupar } from "./lotes.mjs";
 import { db, comoVector } from "./db.mjs";
 import { MARCA, MAXIMO } from "./marca.mjs";
+import { textoBusqueda } from "./texto-busqueda.mjs";
 
 const TAMANO_LOTE = 32;   // Ollama no tiene el tope de 100 de Google, pero corre en tu compu
 await db.query("TRUNCATE fragmentos RESTART IDENTITY");   // arranca de cero: sin duplicados
@@ -27,13 +28,15 @@ for (const archivo of archivos) {
   console.log(`${archivo}: ${fragmentos.length} fragmentos en ${lotes.length} lote(s)`);
 
   for (const lote of lotes) {
-    const vectores = await embeddingsEnLote(lote.map(f => f.texto));
+    // el vector sale del texto de búsqueda; en la tabla se guardan los dos textos
+    const busquedas = lote.map(f => textoBusqueda(f.texto));
+    const vectores = await embeddingsEnLote(busquedas);
     for (let i = 0; i < lote.length; i++) {
       const { appid = null, precio = null, descuento = null } = datosDe(lote[i].seccion);
       await db.query(
-        `INSERT INTO fragmentos (fuente, seccion, posicion, texto, embedding, appid, precio, descuento)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
-        [archivo, lote[i].seccion ?? null, lote[i].id, lote[i].texto, comoVector(vectores[i]),
+        `INSERT INTO fragmentos (fuente, seccion, posicion, texto, texto_busqueda, embedding, appid, precio, descuento)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
+        [archivo, lote[i].seccion ?? null, lote[i].id, lote[i].texto, busquedas[i], comoVector(vectores[i]),
          appid, precio, descuento],
       );
     }
