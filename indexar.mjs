@@ -6,6 +6,7 @@ import { db, comoVector } from "./db.mjs";
 import { MARCA } from "./marca.mjs";
 
 const TAMANO_LOTE = 32;   // Ollama no tiene el tope de 100 de Google, pero corre en tu compu
+await db.query("TRUNCATE fragmentos RESTART IDENTITY");   // arranca de cero: sin duplicados
 
 // Extensión Steam: precio, descuento y appid de cada juego, por nombre: los de las ofertas
 // (bajar-steam.mjs) y los más jugados (bajar-populares.mjs, si se corrió).

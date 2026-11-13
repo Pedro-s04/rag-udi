@@ -6,6 +6,7 @@ import { readFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
 import { embedding, responder } from "./api.mjs";
 import { buscar } from "./buscar.mjs";
+import { reescribir } from "./reescribir.mjs";
 import { crearServidor } from "./servidor.mjs";
 
 const PUERTO = Number(process.env.PUERTO ?? 3000);
@@ -27,25 +28,12 @@ function guardarPrompt(prompt) {
 // la etiqueta con la que se cita cada fragmento, igual que en preguntar.mjs
 const etiqueta = r => `${r.fuente} · ${r.seccion ?? `fragmento ${r.posicion}`}`;
 
-// Etapa 0: Gemini pasa la pregunta a las palabras de las fichas de Steam
-// (corrige errores, saca el relleno, agrega "multijugador"...). Solo se usa para BUSCAR:
-// al modelo que responde le llega la pregunta original.
-// Si Gemini falla, se busca con la pregunta tal cual y se avisa.
-async function reescribir(pregunta) {
-  const t = performance.now();
-  try {
-    const plantilla = await leerPrompt("reescribir.txt");
-    const texto = await responder(plantilla.replace("{{pregunta}}", () => pregunta));
-    const consulta = texto.trim().split("\n")[0].replace(/^["“]|["”]$/g, "").trim();
-    return { consulta: consulta || pregunta, ms: performance.now() - t };
-  } catch (e) {
-    return { consulta: pregunta, ms: performance.now() - t, error: mensajeDeError(e) };
-  }
-}
-
 // Etapas 0 a 3: pregunta -> consulta -> vector -> fragmentos -> prompt. Cada una con su tiempo.
+// La etapa 0 (reescribir) está en reescribir.mjs. Si Gemini falla, se busca con la pregunta
+// tal cual y se avisa en pantalla.
 async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
   const reescritura = await reescribir(pregunta);
+  if (reescritura.error) reescritura.error = mensajeDeError(reescritura.error);
 
   let t = performance.now();
   const vector = await embedding(reescritura.consulta);

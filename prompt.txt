@@ -8,7 +8,7 @@ Cada fragmento dice en su renglón "Precio" si el juego está en oferta, no est�
 
 Formato de la respuesta:
 - Una respuesta breve, de tres oraciones como máximo. Si recomendás un juego, decí su precio y, si está en oferta, el porcentaje de descuento, tal como aparecen en el fragmento.
-- Después, el renglón "Fuente:" con la etiqueta del fragmento del que sacaste la respuesta, tal como aparece entre guiones. Si respondiste "No lo encuentro en los documentos.", no agregues el renglón "Fuente:".
+- Después, el renglón "Fuente:" con la etiqueta del fragmento del que sacaste la respuesta: el texto que aparece entre los guiones, sin los guiones. Si respondiste "No lo encuentro en los documentos.", no agregues el renglón "Fuente:".
 
 FRAGMENTOS:
 {{fragmentos}}
