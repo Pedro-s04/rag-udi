@@ -7,6 +7,7 @@ import { randomUUID } from "node:crypto";
 import { embedding, responder } from "./api.mjs";
 import { buscar } from "./buscar.mjs";
 import { reescribir } from "./reescribir.mjs";
+import { pideMasJugados, pideGratis } from "./intencion.mjs";
 import { crearServidor } from "./servidor.mjs";
 
 const PUERTO = Number(process.env.PUERTO ?? 3000);
@@ -35,6 +36,7 @@ const etiqueta = r => `${r.fuente} · ${r.seccion ?? `fragmento ${r.posicion}`}`
 // La etapa 0 (reescribir) está en reescribir.mjs. Si Gemini falla, se busca con la pregunta
 // tal cual y se avisa en pantalla.
 async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
+  // descuentoMin y precioMax llegan de la web; "gratis" en una pregunta de más jugados pone precioMax en 0
   const reescritura = await reescribir(pregunta);
   if (reescritura.error) reescritura.error = mensajeDeError(reescritura.error);
 
@@ -42,14 +44,21 @@ async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
   const vector = await embedding(reescritura.consulta);
   const msEmbedding = performance.now() - t;
 
+  // "el más jugado" es un número: lo ordena la base por puesto, no la búsqueda por significado.
+  // Ahí no se aplica el umbral, porque los juegos no se eligieron por parecido sino por el dato.
+  const porPuesto = pideMasJugados(reescritura.consulta);
+  if (porPuesto && precioMax == null && pideGratis(reescritura.consulta)) precioMax = 0;
   const filtros = { descuentoMin, precioMax };
+  const esUtil = r => porPuesto || r.similitud >= UMBRAL;
   t = performance.now();
-  const resultados = await buscar(vector, K, filtros);
+  const resultados = await buscar(vector, K, { ...filtros, porPuesto });
   const msBusqueda = performance.now() - t;
 
-  const utiles = resultados.filter(r => r.similitud >= UMBRAL);
+  const utiles = resultados.filter(esUtil);
   const fragmentos = utiles
-    .map(r => `--- ${etiqueta(r)} ---\n${r.texto}`)
+    .map(r => `--- ${etiqueta(r)} ---\n` +
+              (r.puesto ? `(Puesto ${r.puesto} de los 100 juegos más jugados de Steam)\n` : "") +
+              r.texto)
     .join("\n\n");
   const prompt = utiles.length === 0 ? null : (await leerPrompt("prompt.txt"))
     .replace("{{fragmentos}}", () => fragmentos)
@@ -62,6 +71,8 @@ async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
     msEmbedding,
     filtros,
     umbral: UMBRAL,
+    k: K,
+    orden: porPuesto ? "puesto" : "distancia",
     resultados: resultados.map(r => ({
       seccion: r.seccion?.replace(/^#+\s*/, "") ?? `fragmento ${r.posicion}`,
       fuente: r.fuente,
@@ -69,7 +80,8 @@ async function buscarPasos({ pregunta, descuentoMin, precioMax }) {
       similitud: r.similitud,
       precio: r.precio,
       descuento: r.descuento,
-      util: r.similitud >= UMBRAL,
+      puesto: r.puesto,
+      util: esUtil(r),
     })),
     msBusqueda,
     prompt,

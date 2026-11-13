@@ -15,6 +15,8 @@ await db.query("TRUNCATE fragmentos RESTART IDENTITY");   // arranca de cero: si
 const leerJuegos = async archivo => JSON.parse(await readFile(archivo, "utf8").catch(() => "{}"));
 const juegos = { ...await leerJuegos("datos/populares.json"), ...await leerJuegos("datos/juegos.json") };
 const datosDe = seccion => juegos[seccion?.replace(/^#+\s*/, "")] ?? {};
+// El puesto entre los 100 más jugados, por appid (bajar-populares.mjs, si se corrió).
+const puestos = await leerJuegos("datos/puestos.json");
 
 const archivos = (await readdir("corpus")).filter(a => /\.(txt|md)$/i.test(a));
 if (archivos.length === 0) throw new Error("No hay archivos .txt ni .md en la carpeta corpus");
@@ -34,10 +36,10 @@ for (const archivo of archivos) {
     for (let i = 0; i < lote.length; i++) {
       const { appid = null, precio = null, descuento = null } = datosDe(lote[i].seccion);
       await db.query(
-        `INSERT INTO fragmentos (fuente, seccion, posicion, texto, texto_busqueda, embedding, appid, precio, descuento)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
+        `INSERT INTO fragmentos (fuente, seccion, posicion, texto, texto_busqueda, embedding, appid, precio, descuento, puesto)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`,
         [archivo, lote[i].seccion ?? null, lote[i].id, lote[i].texto, busquedas[i], comoVector(vectores[i]),
-         appid, precio, descuento],
+         appid, precio, descuento, puestos[appid] ?? null],
       );
     }
     total += lote.length;

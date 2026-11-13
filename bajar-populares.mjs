@@ -3,6 +3,7 @@
 // Escribe:
 //   corpus/populares-steam.md  un juego por sección "## Nombre", igual que las ofertas
 //   datos/populares.json        sus números (appid, precio, descuento), por nombre
+//   datos/puestos.json          el puesto de los 100 (también los que están en las ofertas), por appid
 // Los que ya están en datos/juegos.json (las ofertas) se saltean: ya están en el corpus.
 //
 // Uso: node bajar-populares.mjs      (tarda unos 3 minutos)
@@ -14,6 +15,14 @@ const RANKING = "https://api.steampowered.com/ISteamChartsService/GetMostPlayedG
 
 const ofertas = JSON.parse(await readFile("datos/juegos.json", "utf8").catch(() => "{}"));
 const yaEstan = new Set(Object.values(ofertas).map(j => j.appid));
+
+// Los embeddings entienden ideas pero no números: para ellos "puesto 1" y "puesto 10" son
+// casi lo mismo. Por eso los primeros puestos también se dicen con palabras.
+function enPalabras(rank) {
+  if (rank === 1) return ["Es el juego más jugado de Steam: el número uno en cantidad de jugadores."];
+  if (rank <= 10) return ["Es uno de los 10 juegos más jugados de Steam."];
+  return [];
+}
 
 const { response: { ranks } } = await pedirJSON(RANKING);
 console.log(`Steam devolvió los ${ranks.length} más jugados`);
@@ -33,7 +42,10 @@ for (const { rank, appid, peak_in_game } of ranks) {
   secciones.push(comoMarkdown(j, {
     hoy,
     resenas: recomendaciones ? [`${recomendaciones.toLocaleString("es-AR")} reseñas de usuarios`] : null,
-    extra: [`Popularidad: puesto ${rank} de los 100 juegos más jugados de Steam (pico de ${peak_in_game.toLocaleString("es-AR")} jugadores al mismo tiempo)`],
+    extra: [
+      `Popularidad: puesto ${rank} de los 100 juegos más jugados de Steam (pico de ${peak_in_game.toLocaleString("es-AR")} jugadores al mismo tiempo)`,
+      ...enPalabras(rank),
+    ],
   }));
   juegos[nombre] = numeros(j);
   const { precio, descuento } = juegos[nombre];
@@ -44,5 +56,8 @@ await mkdir("corpus", { recursive: true });
 await mkdir("datos", { recursive: true });
 await writeFile("corpus/populares-steam.md", secciones.join("\n\n") + "\n");
 await writeFile("datos/populares.json", JSON.stringify(juegos, null, 2));
+// el puesto va aparte y por appid: así también lo tienen los que se saltearon por estar en las ofertas
+const puestos = Object.fromEntries(ranks.map(({ rank, appid }) => [appid, rank]));
+await writeFile("datos/puestos.json", JSON.stringify(puestos, null, 2));
 console.log(`\nListo: ${secciones.length} juegos en corpus/populares-steam.md` +
             ` (${repetidos} ya estaban en las ofertas, ${sinDatos} sin datos en Steam)`);

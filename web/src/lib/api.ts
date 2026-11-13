@@ -7,6 +7,7 @@ export type Resultado = {
   similitud: number
   precio: number | null
   descuento: number | null
+  puesto: number | null
   util: boolean
 }
 
@@ -18,6 +19,9 @@ export type Pasos = {
   msEmbedding: number
   filtros: { descuentoMin?: number; precioMax?: number }
   umbral: number
+  k: number
+  // "distancia": búsqueda por significado; "puesto": las de más jugados, ordenadas con SQL
+  orden: 'distancia' | 'puesto'
   resultados: Resultado[]
   msBusqueda: number
   prompt: string | null

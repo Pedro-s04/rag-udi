@@ -19,7 +19,8 @@ CREATE TABLE fragmentos (
   -- para poder filtrar con SQL. Salen de datos/juegos.json, que arma bajar-steam.mjs.
   appid     INTEGER,                 -- el número del juego en Steam
   precio    NUMERIC(10,2),           -- precio con descuento, en dólares
-  descuento INTEGER                  -- porcentaje de descuento (0 a 100)
+  descuento INTEGER,                 -- porcentaje de descuento (0 a 100)
+  puesto    INTEGER                  -- puesto entre los 100 más jugados (vacío si no está)
 );
 
 -- Índice HNSW para buscar rápido por distancia coseno

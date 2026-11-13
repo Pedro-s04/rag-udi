@@ -85,7 +85,9 @@ export function PanelPasos() {
                 ))}
               </tbody>
             </table>
-            <p className="mt-1 font-mono text-[11px] text-gris">ORDER BY similitud DESC LIMIT 3 · umbral {pasos.umbral} · {ms(pasos.msBusqueda)}</p>
+            <p className="mt-1 font-mono text-[11px] text-gris">{pasos.orden === 'puesto'
+              ? <>ORDER BY puesto LIMIT {pasos.k} · más jugados: ordena el dato, no el parecido · sin umbral</>
+              : <>ORDER BY embedding &lt;=&gt; pregunta LIMIT {pasos.k} · umbral {pasos.umbral}</>} · {ms(pasos.msBusqueda)}</p>
           </>
         )}
       </Paso>

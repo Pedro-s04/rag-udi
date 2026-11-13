@@ -5,7 +5,7 @@ import type { Pasos } from './api'
 const pasos = (idPrompt: string | null): Pasos => ({
   reescritura: { consulta: 'terror coop', ms: 10 },
   vector: [0.1], dimensiones: 1024, msEmbedding: 5,
-  filtros: {}, umbral: 0, resultados: [], msBusqueda: 3,
+  filtros: {}, umbral: 0, k: 5, orden: 'distancia', resultados: [], msBusqueda: 3,
   prompt: idPrompt ? 'PROMPT' : null, idPrompt,
 })
 
