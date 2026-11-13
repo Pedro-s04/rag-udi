@@ -15,8 +15,10 @@ const PUERTO = Number(process.env.PUERTO ?? 3000);
 const leerPrompt = archivo => readFile(archivo, "utf8");
 const UMBRAL = Number(process.env.UMBRAL ?? 0);
 // Cuántos fragmentos se traen. La guía usa 3, pero la reescritura de Gemini varía un poco cada
-// vez y a veces deja los mejores juegos 4.º o 5.º: con 5, el modelo tiene de dónde elegir.
-const K = 5;
+// vez y a veces deja los mejores juegos 4.º o 5.º. Con 8, el modelo tiene de dónde elegir las
+// TRES recomendaciones que pide el prompt: con 5, para "terror" llegaban solo 2 juegos de terror
+// de verdad (R.E.P.O., Dead by Daylight y 7 Days to Die quedaban 6.º a 8.º).
+const K = 8;
 
 // Los prompts armados quedan acá, en el servidor, bajo un id al azar: la página solo
 // devuelve el id. Así nadie puede usar /api/responder para mandarle a Gemini lo que quiera
